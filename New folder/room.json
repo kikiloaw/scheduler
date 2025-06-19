@@ -1,0 +1,1616 @@
+[
+  {
+    "RoomID": 0,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Not Set"
+  },
+  {
+    "RoomID": 8,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Faculty Room"
+  },
+  {
+    "RoomID": 9,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electronics Engineering Lab"
+  },
+  {
+    "RoomID": 10,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electrical Engineering Lab"
+  },
+  {
+    "RoomID": 11,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Computer Engineering Lab 1"
+  },
+  {
+    "RoomID": 12,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Computer Engineering Lab 2"
+  },
+  {
+    "RoomID": 13,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ITE Laboratory 1"
+  },
+  {
+    "RoomID": 14,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ITE Laboratory 2"
+  },
+  {
+    "RoomID": 15,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ITE Laboratory 3"
+  },
+  {
+    "RoomID": 16,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ITE Laboratory 4"
+  },
+  {
+    "RoomID": 17,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ITE Laboratory 5"
+  },
+  {
+    "RoomID": 18,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 301"
+  },
+  {
+    "RoomID": 19,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 302"
+  },
+  {
+    "RoomID": 20,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 303"
+  },
+  {
+    "RoomID": 21,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 304"
+  },
+  {
+    "RoomID": 22,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 305"
+  },
+  {
+    "RoomID": 23,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 306"
+  },
+  {
+    "RoomID": 24,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 307"
+  },
+  {
+    "RoomID": 25,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 308"
+  },
+  {
+    "RoomID": 26,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 309"
+  },
+  {
+    "RoomID": 27,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 310"
+  },
+  {
+    "RoomID": 28,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 311"
+  },
+  {
+    "RoomID": 30,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Jeep Laboratory"
+  },
+  {
+    "RoomID": 31,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "CEIT Computer Laboratory 1"
+  },
+  {
+    "RoomID": 32,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "CEIT Computer Laboratory 2"
+  },
+  {
+    "RoomID": 33,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "CEIT Computer Laboratory 3"
+  },
+  {
+    "RoomID": 34,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "CEIT Computer Laboratory 4"
+  },
+  {
+    "RoomID": 35,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "CEIT Computer Laboratory 5"
+  },
+  {
+    "RoomID": 36,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Multimedia Resouce Center"
+  },
+  {
+    "RoomID": 37,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 251"
+  },
+  {
+    "RoomID": 38,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 252"
+  },
+  {
+    "RoomID": 39,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 253"
+  },
+  {
+    "RoomID": 40,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 254"
+  },
+  {
+    "RoomID": 41,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 255"
+  },
+  {
+    "RoomID": 42,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 256"
+  },
+  {
+    "RoomID": 43,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room 1"
+  },
+  {
+    "RoomID": 44,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room 2"
+  },
+  {
+    "RoomID": 45,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room 3"
+  },
+  {
+    "RoomID": 46,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 268"
+  },
+  {
+    "RoomID": 47,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Jeep Accelerated Laboratory"
+  },
+  {
+    "RoomID": 48,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Civil Engineering Laboratory 2"
+  },
+  {
+    "RoomID": 49,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Old Library 1"
+  },
+  {
+    "RoomID": 50,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Old Library 2"
+  },
+  {
+    "RoomID": 51,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Old Library 3"
+  },
+  {
+    "RoomID": 52,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Ground"
+  },
+  {
+    "RoomID": 53,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 266"
+  },
+  {
+    "RoomID": 54,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 267"
+  },
+  {
+    "RoomID": 55,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 269"
+  },
+  {
+    "RoomID": 56,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Multimedia Resource Center 1"
+  },
+  {
+    "RoomID": 57,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Multimedia Resource Center 2"
+  },
+  {
+    "RoomID": 58,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 312"
+  },
+  {
+    "RoomID": 59,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 211"
+  },
+  {
+    "RoomID": 60,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Sample Room"
+  },
+  {
+    "RoomID": 61,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 272"
+  },
+  {
+    "RoomID": 62,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 367"
+  },
+  {
+    "RoomID": 63,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 357"
+  },
+  {
+    "RoomID": 64,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room 1"
+  },
+  {
+    "RoomID": 65,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room 2"
+  },
+  {
+    "RoomID": 66,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room 3"
+  },
+  {
+    "RoomID": 67,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 366"
+  },
+  {
+    "RoomID": 68,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 276"
+  },
+  {
+    "RoomID": 69,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 250"
+  },
+  {
+    "RoomID": 70,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 364"
+  },
+  {
+    "RoomID": 71,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 247"
+  },
+  {
+    "RoomID": 72,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 368"
+  },
+  {
+    "RoomID": 73,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electronics Laboratory 1"
+  },
+  {
+    "RoomID": 74,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electronics Laboratory 2"
+  },
+  {
+    "RoomID": 75,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 356"
+  },
+  {
+    "RoomID": 76,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 360"
+  },
+  {
+    "RoomID": 77,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electricity Laboratory 1"
+  },
+  {
+    "RoomID": 78,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electricity Laboratory 2"
+  },
+  {
+    "RoomID": 79,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 245"
+  },
+  {
+    "RoomID": 80,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 246"
+  },
+  {
+    "RoomID": 81,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 248"
+  },
+  {
+    "RoomID": 82,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 249"
+  },
+  {
+    "RoomID": 83,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 354"
+  },
+  {
+    "RoomID": 84,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 352"
+  },
+  {
+    "RoomID": 85,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 351"
+  },
+  {
+    "RoomID": 86,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 353"
+  },
+  {
+    "RoomID": 87,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 358"
+  },
+  {
+    "RoomID": 88,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 361"
+  },
+  {
+    "RoomID": 89,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 362"
+  },
+  {
+    "RoomID": 90,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 363"
+  },
+  {
+    "RoomID": 91,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 365"
+  },
+  {
+    "RoomID": 92,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 369"
+  },
+  {
+    "RoomID": 93,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 258"
+  },
+  {
+    "RoomID": 94,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 257"
+  },
+  {
+    "RoomID": 95,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 259"
+  },
+  {
+    "RoomID": 96,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 260"
+  },
+  {
+    "RoomID": 97,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 261"
+  },
+  {
+    "RoomID": 98,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 262"
+  },
+  {
+    "RoomID": 99,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 263"
+  },
+  {
+    "RoomID": 100,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 264"
+  },
+  {
+    "RoomID": 101,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 265"
+  },
+  {
+    "RoomID": 102,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 270"
+  },
+  {
+    "RoomID": 103,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 271"
+  },
+  {
+    "RoomID": 104,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 273"
+  },
+  {
+    "RoomID": 105,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 274"
+  },
+  {
+    "RoomID": 106,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 275"
+  },
+  {
+    "RoomID": 107,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 277"
+  },
+  {
+    "RoomID": 108,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 278"
+  },
+  {
+    "RoomID": 109,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 279"
+  },
+  {
+    "RoomID": 110,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 280"
+  },
+  {
+    "RoomID": 111,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 359"
+  },
+  {
+    "RoomID": 112,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room 4"
+  },
+  {
+    "RoomID": 113,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room 5"
+  },
+  {
+    "RoomID": 114,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 158a"
+  },
+  {
+    "RoomID": 115,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Engineering Computer Laboratory 1"
+  },
+  {
+    "RoomID": 116,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Engineering Computer Laboratory 2"
+  },
+  {
+    "RoomID": 117,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Civil Engineering Laboratory 1"
+  },
+  {
+    "RoomID": 118,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Civil Engineering Laboratory 1"
+  },
+  {
+    "RoomID": 119,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "New Room"
+  },
+  {
+    "RoomID": 120,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "TBA"
+  },
+  {
+    "RoomID": 121,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 159"
+  },
+  {
+    "RoomID": 122,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Graduate School 1"
+  },
+  {
+    "RoomID": 123,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Graduate School 2"
+  },
+  {
+    "RoomID": 124,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room A"
+  },
+  {
+    "RoomID": 125,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room B"
+  },
+  {
+    "RoomID": 126,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room C"
+  },
+  {
+    "RoomID": 127,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Temporary Room D"
+  },
+  {
+    "RoomID": 128,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 235"
+  },
+  {
+    "RoomID": 129,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 01"
+  },
+  {
+    "RoomID": 130,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 02"
+  },
+  {
+    "RoomID": 131,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 03"
+  },
+  {
+    "RoomID": 132,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 401"
+  },
+  {
+    "RoomID": 133,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 402"
+  },
+  {
+    "RoomID": 134,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 403"
+  },
+  {
+    "RoomID": 135,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 404"
+  },
+  {
+    "RoomID": 136,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 405"
+  },
+  {
+    "RoomID": 137,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 406"
+  },
+  {
+    "RoomID": 138,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 407"
+  },
+  {
+    "RoomID": 139,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 408"
+  },
+  {
+    "RoomID": 140,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 409"
+  },
+  {
+    "RoomID": 141,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 410"
+  },
+  {
+    "RoomID": 142,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 411"
+  },
+  {
+    "RoomID": 143,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CEIT Room 412"
+  },
+  {
+    "RoomID": 144,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Gymnassium"
+  },
+  {
+    "RoomID": 145,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 226"
+  },
+  {
+    "RoomID": 146,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 227"
+  },
+  {
+    "RoomID": 147,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 228"
+  },
+  {
+    "RoomID": 148,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 229"
+  },
+  {
+    "RoomID": 149,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 230"
+  },
+  {
+    "RoomID": 150,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 231"
+  },
+  {
+    "RoomID": 151,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 232"
+  },
+  {
+    "RoomID": 152,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 233"
+  },
+  {
+    "RoomID": 153,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 234"
+  },
+  {
+    "RoomID": 154,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 235"
+  },
+  {
+    "RoomID": 155,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 236"
+  },
+  {
+    "RoomID": 156,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 237"
+  },
+  {
+    "RoomID": 157,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 240"
+  },
+  {
+    "RoomID": 158,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 299"
+  },
+  {
+    "RoomID": 159,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CTE Room 216"
+  },
+  {
+    "RoomID": 160,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Under the Gymnassium"
+  },
+  {
+    "RoomID": 161,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 355"
+  },
+  {
+    "RoomID": 162,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SWK"
+  },
+  {
+    "RoomID": 165,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 375"
+  },
+  {
+    "RoomID": 166,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 151"
+  },
+  {
+    "RoomID": 167,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 244"
+  },
+  {
+    "RoomID": 168,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 144"
+  },
+  {
+    "RoomID": 169,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 148"
+  },
+  {
+    "RoomID": 170,
+    "RoomType": 4,
+    "Floor": 1,
+    "RoomName": "Automotive Lab"
+  },
+  {
+    "RoomID": 171,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 145"
+  },
+  {
+    "RoomID": 172,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 146"
+  },
+  {
+    "RoomID": 173,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 152"
+  },
+  {
+    "RoomID": 174,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 153"
+  },
+  {
+    "RoomID": 175,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 154"
+  },
+  {
+    "RoomID": 176,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 155"
+  },
+  {
+    "RoomID": 177,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 156"
+  },
+  {
+    "RoomID": 178,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 157"
+  },
+  {
+    "RoomID": 179,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Accreditation Center"
+  },
+  {
+    "RoomID": 180,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 150"
+  },
+  {
+    "RoomID": 181,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 202"
+  },
+  {
+    "RoomID": 182,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 203"
+  },
+  {
+    "RoomID": 183,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Computer Laboratory"
+  },
+  {
+    "RoomID": 184,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Industrial Arts Shop"
+  },
+  {
+    "RoomID": 185,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Food Technical Shop Room"
+  },
+  {
+    "RoomID": 186,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electrical Shop Room"
+  },
+  {
+    "RoomID": 187,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Electronics Shop Room"
+  },
+  {
+    "RoomID": 188,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "Drafting Shop Room"
+  },
+  {
+    "RoomID": 189,
+    "RoomType": 4,
+    "Floor": 1,
+    "RoomName": "Auto Shop Room"
+  },
+  {
+    "RoomID": 190,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "HRM ROOM 1"
+  },
+  {
+    "RoomID": 191,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "HRM ROOM 2"
+  },
+  {
+    "RoomID": 192,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "HRM LABORATORY 1"
+  },
+  {
+    "RoomID": 193,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "HRM LABORATORY 2"
+  },
+  {
+    "RoomID": 194,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "HRM ROOM 3"
+  },
+  {
+    "RoomID": 195,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "HRM ROOM 4"
+  },
+  {
+    "RoomID": 196,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "HRM LABORATORY 3"
+  },
+  {
+    "RoomID": 197,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "HRM LABORATORY 4 "
+  },
+  {
+    "RoomID": 198,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 158"
+  },
+  {
+    "RoomID": 199,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "G1"
+  },
+  {
+    "RoomID": 200,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "TEMPORARY ROOM 305"
+  },
+  {
+    "RoomID": 201,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "TEMPORARY ROOM 304"
+  },
+  {
+    "RoomID": 202,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "TEMPORARY ROOM 302"
+  },
+  {
+    "RoomID": 203,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room not set"
+  },
+  {
+    "RoomID": 205,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 228"
+  },
+  {
+    "RoomID": 206,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 229"
+  },
+  {
+    "RoomID": 207,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 231"
+  },
+  {
+    "RoomID": 208,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 232"
+  },
+  {
+    "RoomID": 209,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 233"
+  },
+  {
+    "RoomID": 210,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 234"
+  },
+  {
+    "RoomID": 211,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 235"
+  },
+  {
+    "RoomID": 212,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 236"
+  },
+  {
+    "RoomID": 213,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Related subjects room 237"
+  },
+  {
+    "RoomID": 214,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "High school room 1"
+  },
+  {
+    "RoomID": 215,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "High school room 2"
+  },
+  {
+    "RoomID": 216,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "High school room 3"
+  },
+  {
+    "RoomID": 217,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "High school room 4"
+  },
+  {
+    "RoomID": 218,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "High school room 5"
+  },
+  {
+    "RoomID": 219,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "G2"
+  },
+  {
+    "RoomID": 220,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver303"
+  },
+  {
+    "RoomID": 221,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver302"
+  },
+  {
+    "RoomID": 222,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver301"
+  },
+  {
+    "RoomID": 223,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver304"
+  },
+  {
+    "RoomID": 224,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver305"
+  },
+  {
+    "RoomID": 225,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver306"
+  },
+  {
+    "RoomID": 226,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver307"
+  },
+  {
+    "RoomID": 227,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver308"
+  },
+  {
+    "RoomID": 228,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver309"
+  },
+  {
+    "RoomID": 229,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "GS3-1"
+  },
+  {
+    "RoomID": 230,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "CAS Office"
+  },
+  {
+    "RoomID": 231,
+    "RoomType": 3,
+    "Floor": 1,
+    "RoomName": "Hydraulic Engineering Lab"
+  },
+  {
+    "RoomID": 232,
+    "RoomType": 3,
+    "Floor": 1,
+    "RoomName": "Geotechnical and Materials Engineering Lab"
+  },
+  {
+    "RoomID": 233,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 101"
+  },
+  {
+    "RoomID": 234,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 102"
+  },
+  {
+    "RoomID": 235,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 161"
+  },
+  {
+    "RoomID": 236,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 143"
+  },
+  {
+    "RoomID": 237,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 149"
+  },
+  {
+    "RoomID": 238,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 137"
+  },
+  {
+    "RoomID": 239,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 136"
+  },
+  {
+    "RoomID": 240,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 239"
+  },
+  {
+    "RoomID": 241,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 238"
+  },
+  {
+    "RoomID": 242,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 240"
+  },
+  {
+    "RoomID": 243,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 244-B"
+  },
+  {
+    "RoomID": 244,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 244-A"
+  },
+  {
+    "RoomID": 245,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 243"
+  },
+  {
+    "RoomID": 246,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 342"
+  },
+  {
+    "RoomID": 247,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 241"
+  },
+  {
+    "RoomID": 248,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 362-A"
+  },
+  {
+    "RoomID": 249,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 301"
+  },
+  {
+    "RoomID": 250,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 302"
+  },
+  {
+    "RoomID": 251,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "COT Room 201"
+  },
+  {
+    "RoomID": 252,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 212"
+  },
+  {
+    "RoomID": 253,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 213"
+  },
+  {
+    "RoomID": 254,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 512"
+  },
+  {
+    "RoomID": 255,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 511"
+  },
+  {
+    "RoomID": 256,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 510"
+  },
+  {
+    "RoomID": 257,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 509"
+  },
+  {
+    "RoomID": 258,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 508"
+  },
+  {
+    "RoomID": 259,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 507"
+  },
+  {
+    "RoomID": 260,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 505"
+  },
+  {
+    "RoomID": 261,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 504"
+  },
+  {
+    "RoomID": 262,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 503"
+  },
+  {
+    "RoomID": 263,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "EB Room 502"
+  },
+  {
+    "RoomID": 264,
+    "RoomType": 2,
+    "Floor": 1,
+    "RoomName": "ClaverLab"
+  },
+  {
+    "RoomID": 265,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver NDRRMC BLBG."
+  },
+  {
+    "RoomID": 266,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver1"
+  },
+  {
+    "RoomID": 267,
+    "RoomType": 5,
+    "Floor": 1,
+    "RoomName": "Mechanical Shop Room"
+  },
+  {
+    "RoomID": 268,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Claver Extension"
+  },
+  {
+    "RoomID": 269,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 201"
+  },
+  {
+    "RoomID": 270,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 301"
+  },
+  {
+    "RoomID": 271,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 302"
+  },
+  {
+    "RoomID": 272,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "SB 202"
+  },
+  {
+    "RoomID": 273,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 258"
+  },
+  {
+    "RoomID": 274,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 262"
+  },
+  {
+    "RoomID": 275,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 261"
+  },
+  {
+    "RoomID": 276,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 259"
+  },
+  {
+    "RoomID": 277,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 260"
+  },
+  {
+    "RoomID": 278,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 256"
+  },
+  {
+    "RoomID": 279,
+    "RoomType": 1,
+    "Floor": 1,
+    "RoomName": "Room 257"
+  }
+]

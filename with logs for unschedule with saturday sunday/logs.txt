@@ -1,0 +1,23 @@
+UNSCHEDULED: CAD 318 - Computer-Aided Design | Section 2B | Room 32 | Emp 9 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: EL 316 - Electronics | Section 2B | Room 73 | Emp 11 | Day ['Monday'] | Duration 2:30
+UNSCHEDULED: BC 308 - Business Communication | Section 2C | Room 150 | Emp 5 | Day ['Monday'] | Duration 1:00
+UNSCHEDULED: CH 302 - Chemistry | Section 2D | Room 192 | Emp 11 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: MB 205 - Microbiology | Section 2D | Room 170 | Emp 4 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: HI 209 - History | Section 2E | Room 173 | Emp 8 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: IT 402 - Advanced Programming | Section 3A | Room 115 | Emp 13 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:30
+UNSCHEDULED: IT 402 - Advanced Programming | Section 3A | Room 180 | Emp 13 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 116 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
+UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 181 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: AL 400 - Algorithms | Section 3A | Room 117 | Emp 1 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: AL 400 - Algorithms | Section 3A | Room 182 | Emp 1 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: CA 403 - Computer Architecture | Section 3A | Room 300 | Emp 2 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
+UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 118 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 199 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: CN 405 - Computer Networks | Section 3A | Room 77 | Emp 4 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: CN 405 - Computer Networks | Section 3A | Room 200 | Emp 4 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: DM 406 - Discrete Mathematics | Section 3A | Room 201 | Emp 5 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
+UNSCHEDULED: ST 407 - Software Testing | Section 3A | Room 78 | Emp 6 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: ACAD 408 - Advanced CAD | Section 3B | Room 184 | Emp 7 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: BA 418 - Business Analytics | Section 3C | Room 213 | Emp 3 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: ACH 424 - Advanced Chemistry | Section 3D | Room 9 | Emp 9 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: QP 426 - Quantum Physics | Section 3D | Room 221 | Emp 11 | Day ['Monday'] | Duration 2:30

@@ -1,0 +1,729 @@
+[
+  {
+    "Courses": [
+      {
+        "courseid": 101,
+        "coursename": "IT 326 - IOT Applications",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": [11, 13], "employeeid": 1, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 132, "employeeid": 1, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 102,
+        "coursename": "DB 325 - Database Management",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 14, "employeeid": 2, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 133, "employeeid": 2, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 103,
+        "coursename": "MA 324 - Mathematics",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 134, "employeeid": 3, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 104,
+        "coursename": "IT 323 - Web Development",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 15, "employeeid": 4, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 135, "employeeid": 4, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 105,
+        "coursename": "EN 322 - English",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 136, "employeeid": 5, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 106,
+        "coursename": "CN 321 - Networking",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:00", "roomid": [16, 17], "employeeid": 6, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 137, "employeeid": 6, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 107,
+        "coursename": "PH 320 - Physics",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 138, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 108,
+        "coursename": "SE 319 - Software Engineering",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 31, "employeeid": 8, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 139, "employeeid": 8, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 109,
+        "coursename": "CAD 318 - Computer-Aided Design",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 32, "employeeid": 9, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 140, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 110,
+        "coursename": "MA 317 - Engineering Mathematics",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 141, "employeeid": 10, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 111,
+        "coursename": "EL 316 - Electronics",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 73, "employeeid": 11, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 142, "employeeid": 11, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 112,
+        "coursename": "EN 315 - Engineering Drawing",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 143, "employeeid": 12, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 113,
+        "coursename": "ME 314 - Mechanics",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 231, "employeeid": 13, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 144, "employeeid": 13, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 114,
+        "coursename": "TH 313 - Thermodynamics",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 145, "employeeid": 14, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 115,
+        "coursename": "MS 312 - Materials Science",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 232, "employeeid": 1, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 146, "employeeid": 1, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 116,
+        "coursename": "EN 311 - Engineering Ethics",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 147, "employeeid": 2, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 117,
+        "coursename": "CA 310 - Computer Applications",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 33, "employeeid": 3, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 148, "employeeid": 3, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 118,
+        "coursename": "BM 309 - Business Mathematics",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 149, "employeeid": 4, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 119,
+        "coursename": "BC 308 - Business Communication",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 150, "employeeid": 5, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 120,
+        "coursename": "AC 307 - Accounting",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 34, "employeeid": 6, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 151, "employeeid": 6, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 121,
+        "coursename": "EC 306 - Economics",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 152, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 122,
+        "coursename": "MK 305 - Marketing",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 35, "employeeid": 8, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 153, "employeeid": 8, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 123,
+        "coursename": "BL 304 - Business Law",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 154, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 124,
+        "coursename": "FN 303 - Finance",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 183, "employeeid": 10, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 155, "employeeid": 10, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 125,
+        "coursename": "CH 302 - Chemistry",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 192, "employeeid": 11, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 156, "employeeid": 11, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 126,
+        "coursename": "BI 301 - Biology",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 196, "employeeid": 12, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 157, "employeeid": 12, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 127,
+        "coursename": "PH 200 - Physics Advanced",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 158, "employeeid": 13, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 128,
+        "coursename": "ES 201 - Environmental Science",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 197, "employeeid": 14, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 159, "employeeid": 14, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 129,
+        "coursename": "MA 202 - Mathematics Advanced",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 160, "employeeid": 1, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 130,
+        "coursename": "GE 203 - Geology",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 264, "employeeid": 2, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 161, "employeeid": 2, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 131,
+        "coursename": "AS 204 - Astronomy",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 165, "employeeid": 3, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 132,
+        "coursename": "MB 205 - Microbiology",
+        "section": "2D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 170, "employeeid": 4, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 166, "employeeid": 4, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 133,
+        "coursename": "AR 206 - Art Studio",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 167, "employeeid": 5, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 168, "employeeid": 5, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 134,
+        "coursename": "LI 207 - Literature",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 169, "employeeid": 6, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 135,
+        "coursename": "MU 208 - Music",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 171, "employeeid": 7, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 172, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 136,
+        "coursename": "HI 209 - History",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 173, "employeeid": 8, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 137,
+        "coursename": "DR 210 - Drama",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 174, "employeeid": 9, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 175, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 138,
+        "coursename": "PH 211 - Philosophy",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 176, "employeeid": 10, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 139,
+        "coursename": "PH 212 - Photography",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 177, "employeeid": 11, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 178, "employeeid": 11, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 140,
+        "coursename": "SO 213 - Sociology",
+        "section": "2E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 179, "employeeid": 12, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 141,
+        "coursename": "IT 402 - Advanced Programming",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 115, "employeeid": 13, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:30", "roomid": 180, "employeeid": 13, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 142,
+        "coursename": "DS 401 - Data Structures",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 116, "employeeid": 14, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:00", "roomid": 181, "employeeid": 14, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 143,
+        "coursename": "AL 400 - Algorithms",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 117, "employeeid": 1, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:30", "roomid": 182, "employeeid": 1, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 144,
+        "coursename": "CA 403 - Computer Architecture",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 300, "employeeid": 2, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 145,
+        "coursename": "OS 404 - Operating Systems",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 118, "employeeid": 3, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:30", "roomid": 199, "employeeid": 3, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 146,
+        "coursename": "CN 405 - Computer Networks",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 77, "employeeid": 4, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:00", "roomid": 200, "employeeid": 4, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 147,
+        "coursename": "DM 406 - Discrete Mathematics",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 201, "employeeid": 5, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      },
+      {
+        "courseid": 148,
+        "coursename": "ST 407 - Software Testing",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 78, "employeeid": 6, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]},
+          {"duration": "1:00", "roomid": 202, "employeeid": 6, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 149,
+        "coursename": "ACAD 408 - Advanced CAD",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 184, "employeeid": 7, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 203, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 150,
+        "coursename": "ROB 409 - Robotics",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 185, "employeeid": 8, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 205, "employeeid": 8, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 151,
+        "coursename": "AE 410 - Advanced Electronics",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 74, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 152,
+        "coursename": "CS 411 - Control Systems",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 186, "employeeid": 10, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 206, "employeeid": 10, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 153,
+        "coursename": "FM 412 - Fluid Mechanics",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 187, "employeeid": 11, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 207, "employeeid": 11, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 154,
+        "coursename": "AT 413 - Advanced Thermodynamics",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 208, "employeeid": 12, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 155,
+        "coursename": "MT 414 - Manufacturing",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 188, "employeeid": 13, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 209, "employeeid": 13, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 156,
+        "coursename": "EM 415 - Engineering Management",
+        "section": "3B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 210, "employeeid": 14, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 157,
+        "coursename": "AXL 416 - Advanced Excel",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 189, "employeeid": 1, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 211, "employeeid": 1, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 158,
+        "coursename": "BS 417 - Business Statistics",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 212, "employeeid": 2, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 159,
+        "coursename": "BA 418 - Business Analytics",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 193, "employeeid": 3, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 213, "employeeid": 3, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 160,
+        "coursename": "AAC 419 - Advanced Accounting",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 47, "employeeid": 4, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 410, "employeeid": 4, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 161,
+        "coursename": "IB 420 - International Business",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 215, "employeeid": 5, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 162,
+        "coursename": "DMK 421 - Digital Marketing",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 30, "employeeid": 6, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 216, "employeeid": 6, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 163,
+        "coursename": "BS 422 - Business Strategy",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 217, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 164,
+        "coursename": "FM 423 - Financial Modeling",
+        "section": "3C",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 410, "employeeid": 8, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 218, "employeeid": 8, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 165,
+        "coursename": "ACH 424 - Advanced Chemistry",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 9, "employeeid": 9, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 219, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 166,
+        "coursename": "MB 425 - Molecular Biology",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 10, "employeeid": 10, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 132, "employeeid": 10, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 167,
+        "coursename": "QP 426 - Quantum Physics",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "2:30", "roomid": 221, "employeeid": 11, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 168,
+        "coursename": "CS 427 - Climate Science",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 267, "employeeid": 12, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 222, "employeeid": 12, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 169,
+        "coursename": "AC 428 - Advanced Calculus",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 223, "employeeid": 13, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 170,
+        "coursename": "SE 429 - Seismology",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 12, "employeeid": 14, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 224, "employeeid": 14, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 171,
+        "coursename": "AS 430 - Astrophysics",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 225, "employeeid": 1, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 172,
+        "coursename": "GN 431 - Genetics",
+        "section": "3D",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 13, "employeeid": 2, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 226, "employeeid": 2, "day": ["Monday"]}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 173,
+        "coursename": "AR 432 - Art Criticism",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 227, "employeeid": 3, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 228, "employeeid": 3, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 174,
+        "coursename": "CW 433 - Creative Writing",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 229, "employeeid": 4, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 175,
+        "coursename": "MU 434 - Music Composition",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 230, "employeeid": 5, "day": ["Monday"]},
+          {"duration": "1:30", "roomid": 233, "employeeid": 5, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 176,
+        "coursename": "WH 435 - World History",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 234, "employeeid": 6, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 177,
+        "coursename": "DR 436 - Theater Production",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 235, "employeeid": 7, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 236, "employeeid": 7, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 178,
+        "coursename": "ETH 437 - Ethics",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "1:00", "roomid": 237, "employeeid": 8, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 179,
+        "coursename": "DP 438 - Photography Techniques",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "1:30", "roomid": 238, "employeeid": 9, "day": ["Monday"]},
+          {"duration": "1:00", "roomid": 239, "employeeid": 9, "day": ["Monday"]}
+        ]
+      },
+      {
+        "courseid": 180,
+        "coursename": "CA 439 - Cultural Anthropology",
+        "section": "3E",
+        "classschedule": [
+          {"duration": "2:00", "roomid": 240, "employeeid": 10, "day": ["Monday"]}
+        ]
+      }
+    ]
+  }
+]

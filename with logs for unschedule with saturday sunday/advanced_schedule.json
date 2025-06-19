@@ -1,0 +1,122 @@
+[
+  {
+    "course_id": 1,
+    "coursename": "",
+    "section": "2A",
+    "start_time": 480,
+    "end_time": 690,
+    "duration": 210,
+    "roomid": [
+      1
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "08:00",
+    "end_time_str": "11:30"
+  },
+  {
+    "course_id": 3,
+    "coursename": "",
+    "section": "2B",
+    "start_time": 690,
+    "end_time": 810,
+    "duration": 120,
+    "roomid": [
+      2
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "11:30",
+    "end_time_str": "13:30"
+  },
+  {
+    "course_id": 2,
+    "coursename": "",
+    "section": "2A",
+    "start_time": 810,
+    "end_time": 900,
+    "duration": 90,
+    "roomid": [
+      2
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "13:30",
+    "end_time_str": "15:00"
+  },
+  {
+    "course_id": 1,
+    "coursename": "",
+    "section": "2A",
+    "start_time": 900,
+    "end_time": 975,
+    "duration": 75,
+    "roomid": [
+      2
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "15:00",
+    "end_time_str": "16:15"
+  },
+  {
+    "course_id": 1,
+    "coursename": "",
+    "section": "2A",
+    "start_time": 480,
+    "end_time": 540,
+    "duration": 60,
+    "roomid": [
+      2
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "08:00",
+    "end_time_str": "09:00"
+  },
+  {
+    "course_id": 2,
+    "coursename": "",
+    "section": "2A",
+    "start_time": 480,
+    "end_time": 540,
+    "duration": 60,
+    "roomid": [
+      1
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "08:00",
+    "end_time_str": "09:00"
+  },
+  {
+    "course_id": 3,
+    "coursename": "",
+    "section": "2B",
+    "start_time": 480,
+    "end_time": 540,
+    "duration": 60,
+    "roomid": [
+      1
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "08:00",
+    "end_time_str": "09:00"
+  },
+  {
+    "course_id": 4,
+    "coursename": "",
+    "section": "2B",
+    "start_time": 480,
+    "end_time": 540,
+    "duration": 60,
+    "roomid": [
+      1
+    ],
+    "employee_id": 120,
+    "day": "Monday",
+    "start_time_str": "08:00",
+    "end_time_str": "09:00"
+  }
+]

@@ -1,0 +1,18 @@
+UNSCHEDULED: EL 316 - Electronics | Section 2B | Room 73 | Emp 11 | Day ['Monday'] | Duration 2:30
+UNSCHEDULED: PH 200 - Physics Advanced | Section 2D | Room 158 | Emp 13 | Day ['Monday'] | Duration 2:30
+UNSCHEDULED: MB 205 - Microbiology | Section 2D | Room 170 | Emp 4 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: PH 212 - Photography | Section 2E | Room 177 | Emp 11 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: IT 402 - Advanced Programming | Section 3A | Room 115 | Emp 13 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:30
+UNSCHEDULED: IT 402 - Advanced Programming | Section 3A | Room 180 | Emp 13 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 116 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
+UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 181 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: AL 400 - Algorithms | Section 3A | Room 117 | Emp 1 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: CA 403 - Computer Architecture | Section 3A | Room 300 | Emp 2 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
+UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 118 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 199 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: CN 405 - Computer Networks | Section 3A | Room 77 | Emp 4 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
+UNSCHEDULED: ST 407 - Software Testing | Section 3A | Room 78 | Emp 6 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
+UNSCHEDULED: ACAD 408 - Advanced CAD | Section 3B | Room 184 | Emp 7 | Day ['Monday'] | Duration 2:00
+UNSCHEDULED: FM 412 - Fluid Mechanics | Section 3B | Room 187 | Emp 11 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: BS 422 - Business Strategy | Section 3C | Room 217 | Emp 7 | Day ['Monday'] | Duration 1:30
+UNSCHEDULED: CA 439 - Cultural Anthropology | Section 3E | Room 240 | Emp 10 | Day ['Monday'] | Duration 2:00

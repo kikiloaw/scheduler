@@ -1,0 +1,51 @@
+Time,Day,Employee,Classes
+08:00,Monday,120," (Sec 2A, Room 1) |  (Sec 2A, Room 2) |  (Sec 2A, Room 1) |  (Sec 2B, Room 1) |  (Sec 2B, Room 1)"
+08:00,Tuesday,120," (Sec 2A, Room 1) |  (Sec 2A, Room 2) |  (Sec 2A, Room 1) |  (Sec 2B, Room 1) |  (Sec 2B, Room 1)"
+08:00,Wednesday,120," (Sec 2A, Room 1) |  (Sec 2A, Room 2) |  (Sec 2A, Room 1) |  (Sec 2B, Room 1) |  (Sec 2B, Room 1)"
+08:00,Thursday,120," (Sec 2A, Room 1) |  (Sec 2A, Room 2) |  (Sec 2A, Room 1) |  (Sec 2B, Room 1) |  (Sec 2B, Room 1)"
+08:00,Friday,120," (Sec 2A, Room 1) |  (Sec 2A, Room 2) |  (Sec 2A, Room 1) |  (Sec 2B, Room 1) |  (Sec 2B, Room 1)"
+09:00,Monday,120,
+09:00,Tuesday,120,
+09:00,Wednesday,120,
+09:00,Thursday,120,
+09:00,Friday,120,
+10:00,Monday,120,
+10:00,Tuesday,120,
+10:00,Wednesday,120,
+10:00,Thursday,120,
+10:00,Friday,120,
+11:00,Monday,120,
+11:00,Tuesday,120,
+11:00,Wednesday,120,
+11:00,Thursday,120,
+11:00,Friday,120,
+12:00,Monday,120,
+12:00,Tuesday,120,
+12:00,Wednesday,120,
+12:00,Thursday,120,
+12:00,Friday,120,
+13:00,Monday,120,
+13:00,Tuesday,120,
+13:00,Wednesday,120,
+13:00,Thursday,120,
+13:00,Friday,120,
+14:00,Monday,120,
+14:00,Tuesday,120,
+14:00,Wednesday,120,
+14:00,Thursday,120,
+14:00,Friday,120,
+15:00,Monday,120," (Sec 2A, Room 2)"
+15:00,Tuesday,120," (Sec 2A, Room 2)"
+15:00,Wednesday,120," (Sec 2A, Room 2)"
+15:00,Thursday,120," (Sec 2A, Room 2)"
+15:00,Friday,120," (Sec 2A, Room 2)"
+16:00,Monday,120,
+16:00,Tuesday,120,
+16:00,Wednesday,120,
+16:00,Thursday,120,
+16:00,Friday,120,
+17:00,Monday,120,
+17:00,Tuesday,120,
+17:00,Wednesday,120,
+17:00,Thursday,120,
+17:00,Friday,120,
