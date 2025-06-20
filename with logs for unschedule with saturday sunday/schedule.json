@@ -6,8 +6,9 @@
         "coursename": "IT 326 - IOT Applications",
         "section": "2A",
         "classschedule": [
-          {"duration": "2:00", "roomid": [11, 13], "employeeid": 1, "day": ["Saturday"], "Type": "regular"},
-          {"duration": "1:30", "roomid": 132, "employeeid": 1, "day": ["Sunday"], "Type": "overload"}
+          {"duration": "1:30", "roomid": [11, 13], "employeeid": 340, "day": ["Monday","Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [11, 13], "employeeid": 340, "day": ["Monday","Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [310,307,306], "employeeid": 340, "day": ["Sunday"], "Type": "regular"}
         ]
       },
       {
@@ -15,8 +16,8 @@
         "coursename": "DB 325 - Database Management",
         "section": "2A",
         "classschedule": [
-          {"duration": "1:30", "roomid": 14, "employeeid": 2, "day": ["Monday"], "Type": "regular"},
-          {"duration": "1:00", "roomid": 133, "employeeid": 2, "day": ["Monday"], "Type": "overload"}
+          {"duration": "1:30", "roomid": 14, "employeeid": 2, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": 133, "employeeid": 2, "day": ["Tuesday"], "Type": "overload"}
         ]
       },
       {
@@ -24,7 +25,7 @@
         "coursename": "MA 324 - Mathematics",
         "section": "2A",
         "classschedule": [
-          {"duration": "2:30", "roomid": 134, "employeeid": 3, "day": ["Monday"], "Type": "regular"}
+          {"duration": "2:30", "roomid": 134, "employeeid": 3, "day": ["Wednesday"], "Type": "regular"}
         ]
       },
       {
@@ -32,8 +33,8 @@
         "coursename": "IT 323 - Web Development",
         "section": "2A",
         "classschedule": [
-          {"duration": "1:00", "roomid": 15, "employeeid": 4, "day": ["Monday"], "Type": "overload"},
-          {"duration": "1:00", "roomid": 135, "employeeid": 4, "day": ["Monday"], "Type": "regular"}
+          {"duration": "1:00", "roomid": 15, "employeeid": 4, "day": ["Wednesday"], "Type": "overload"},
+          {"duration": "1:00", "roomid": 135, "employeeid": 4, "day": ["Thursday"], "Type": "regular"}
         ]
       },
       {
@@ -41,7 +42,7 @@
         "coursename": "EN 322 - English",
         "section": "2A",
         "classschedule": [
-          {"duration": "1:30", "roomid": 136, "employeeid": 5, "day": ["Monday"], "Type": "regular"}
+          {"duration": "1:30", "roomid": 136, "employeeid": 5, "day": ["Friday"], "Type": "regular"}
         ]
       },
       {
@@ -49,8 +50,8 @@
         "coursename": "CN 321 - Networking",
         "section": "2A",
         "classschedule": [
-          {"duration": "1:00", "roomid": [16, 17], "employeeid": 6, "day": ["Monday"], "Type": "overload"},
-          {"duration": "1:30", "roomid": 137, "employeeid": 6, "day": ["Monday"], "Type": "regular"}
+          {"duration": "1:00", "roomid": [16, 17], "employeeid": 6, "day": ["Saturday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": 137, "employeeid": 6, "day": ["Saturday"], "Type": "regular"}
         ]
       },
       {
@@ -58,7 +59,7 @@
         "coursename": "PH 320 - Physics",
         "section": "2A",
         "classschedule": [
-          {"duration": "2:00", "roomid": 138, "employeeid": 7, "day": ["Monday"], "Type": "regular"}
+          {"duration": "2:00", "roomid": 138, "employeeid": 7, "day": ["Sunday"], "Type": "regular"}
         ]
       },
       {
@@ -66,7 +67,7 @@
         "coursename": "SE 319 - Software Engineering",
         "section": "2A",
         "classschedule": [
-          {"duration": "1:30", "roomid": 31, "employeeid": 8, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": 31, "employeeid": 8, "day": ["Wednesday"], "Type": "overload"},
           {"duration": "1:00", "roomid": 139, "employeeid": 8, "day": ["Monday"], "Type": "regular"}
         ]
       }
@@ -368,8 +369,8 @@
         "coursename": "IT 402 - Advanced Programming",
         "section": "3A",
         "classschedule": [
-          {"duration": "2:30", "roomid": 115, "employeeid": 13, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"], "Type": "regular"},
-          {"duration": "1:30", "roomid": 180, "employeeid": 13, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"], "Type": "overload"}
+          {"duration": "2:30", "roomid": 115, "employeeid": 13, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": 180, "employeeid": 13, "day": ["Wednesday"], "Type": "overload"}
         ]
       },
       {
@@ -429,8 +430,8 @@
         "coursename": "ST 407 - Software Testing",
         "section": "3A",
         "classschedule": [
-          {"duration": "1:00", "roomid": 78, "employeeid": 6, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"], "Type": "regular"},
-          {"duration": "1:00", "roomid": 202, "employeeid": 6, "day": ["Monday","Wednesday","Friday","Tuesday","Thursday"], "Type": "overload"}
+          {"duration": "1:00", "roomid": 78, "employeeid": 6, "day": ["Sunday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": 202, "employeeid": 6, "day": ["Saturday"], "Type": "overload"}
         ]
       }
     ]

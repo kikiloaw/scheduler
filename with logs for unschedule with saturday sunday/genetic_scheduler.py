@@ -51,14 +51,31 @@ def build_chromosome(class_data):
     for course in class_data['Courses']:
         for sched in course['classschedule']:
             assignment = random_assignment(sched)
+            
+            room_id_val = sched['roomid']
+            possible_rooms = []
+            chosen_room = None
+
+            if isinstance(room_id_val, list):
+                possible_rooms = room_id_val
+                if possible_rooms:
+                    chosen_room = random.choice(possible_rooms)
+                else:
+                    chosen_room = -1 
+            else:
+                possible_rooms = [room_id_val]
+                chosen_room = room_id_val
+
             assignments.append({
                 'courseid': course['courseid'],
                 'coursename': course.get('coursename', ''),
                 'section': course['section'],
-                'roomid': sched['roomid'],
+                'roomid': chosen_room,
+                'possible_rooms': possible_rooms,
                 'employeeid': sched['employeeid'],
                 'duration': parse_duration(sched['duration']),
-                'assignment': assignment
+                'assignment': assignment,
+                'Type': sched.get('Type', 'regular')
             })
     return assignments
 
@@ -127,32 +144,44 @@ def is_time_conflict(a, b):
     return not (e1 <= s2 or e2 <= s1)
 
 def mutate(chromosome):
-    # Randomly change the day or start_time of a random assignment
     c = copy.deepcopy(chromosome)
-    idx = random.randint(0, len(c)-1)
-    if random.random() < 0.5:
-        # Change day
+    idx = random.randint(0, len(c) - 1)
+    
+    mut_options = ['day', 'time']
+    if len(c[idx].get('possible_rooms', [])) > 1:
+        mut_options.append('room')
+    
+    mutation_choice = random.choice(mut_options)
+
+    if mutation_choice == 'day':
         c[idx]['assignment']['day'] = random.choice(days_of_week)
-    else:
-        # Change time
+    elif mutation_choice == 'room':
+        possible_rooms = c[idx]['possible_rooms']
+        current_room = c[idx]['roomid']
+        other_rooms = [r for r in possible_rooms if r != current_room]
+        if other_rooms:
+            c[idx]['roomid'] = random.choice(other_rooms)
+    else:  # 'time'
         duration = c[idx]['duration']
-        sched_type = c[idx].get('Type', 'regular').lower() if 'Type' in c[idx] else 'regular'
+        sched_type = c[idx].get('Type', 'regular').lower()
         if sched_type == 'overload':
-            evening_start = 17 * 60 + 30  # 17:30
-            evening_end = 20 * 60 + 30    # 20:30
+            evening_start = 17 * 60 + 30
+            evening_end = 20 * 60 + 30
             valid_start_times = [t for t in range(evening_start, evening_end + 1, 30) if t + duration <= evening_end]
         else:
-            break_start = 12 * 60  # 12:00 PM
-            break_end = 13 * 60    # 1:00 PM
+            break_start = 12 * 60
+            break_end = 13 * 60
             valid_start_times = []
             for t in time_slots:
                 if t + duration <= break_start or t >= break_end:
-                    if t + duration <= 17*60:
+                    if t + duration <= 17 * 60:
                         valid_start_times.append(t)
-        if not valid_start_times:
-            c[idx]['assignment']['start_time'] = min(time_slots)  # fallback
-        else:
+        
+        if valid_start_times:
             c[idx]['assignment']['start_time'] = random.choice(valid_start_times)
+        else:
+            c[idx]['assignment']['start_time'] = min(time_slots)
+
     return c
 
 def crossover(parent1, parent2):
@@ -302,10 +331,19 @@ def log_unscheduled_classes(class_data, schedule, log_filename='logs.txt'):
                 sched_duration = parse_duration(sched['duration'])
                 found = False
                 for s in schedule:
+                    room_match = False
+                    input_roomid = sched['roomid']
+                    scheduled_roomid = s['roomid']
+                    if isinstance(input_roomid, list):
+                        if scheduled_roomid in input_roomid:
+                            room_match = True
+                    elif scheduled_roomid == input_roomid:
+                        room_match = True
+                    
                     if (
                         s['coursename'] == course.get('coursename', '') and
                         s['section'] == course['section'] and
-                        str(s['roomid']) == str(sched['roomid']) and
+                        room_match and
                         s['employeeid'] == sched['employeeid'] and
                         s['duration'] == sched_duration and
                         (s['day'] == sched_day_val or s['day'] == (','.join(sched['day']) if isinstance(sched.get('day', ''), list) else sched.get('day', '')))
