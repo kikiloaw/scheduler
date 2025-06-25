@@ -2,7 +2,7 @@
   {
     "Courses": [
       {
-        "ClassID": "GE LITE",
+        "courseid": "GE LITE",
         "coursename": "A1 GE LITE - Living in the IT Era",
         "section": "1A",
         "classschedule": [
@@ -11,7 +11,7 @@
         ]
       },
       {
-        "ClassID": "GE LITE",
+        "courseid": "GE LITE",
         "coursename": "A1 GE LITE - Living in the IT Era",
         "section": "1B",
         "classschedule": [
@@ -20,7 +20,7 @@
         ]
       },
       {
-        "ClassID": 111,
+        "courseid": 111,
         "coursename": "B1 ITE 111 - Introduction to Computing",
         "section": "1B",
         "classschedule": [
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "ClassID": 111,
+        "courseid": 111,
         "coursename": "B2 ITE 111 - Introduction to Computing",
         "section": "1B",
         "classschedule": [
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "ClassID": 112,
+        "courseid": 112,
         "coursename": "B1 ITE 112 - Fundamentals of Programming",
         "section": "1B",
         "classschedule": [
@@ -49,7 +49,7 @@
         ]
       },
       {
-        "ClassID": 112,
+        "courseid": 112,
         "coursename": "B2 ITE 112 - Fundamentals of Programming",
         "section": "1B",
         "classschedule": [
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "ClassID": 113,
+        "courseid": 113,
         "coursename": "IS 113 - IS/IT Service Management",
         "section": "1B",
         "classschedule": [
@@ -71,7 +71,7 @@
   {
     "Courses": [
       {
-        "ClassID": 111,
+        "courseid": 111,
         "coursename": "A1 ITE 111 - Introduction to Computing",
         "section": "1A",
         "classschedule": [
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "ClassID": 111,
+        "courseid": 111,
         "coursename": "A2 ITE 111 - Introduction to Computing",
         "section": "1A",
         "classschedule": [
@@ -90,7 +90,7 @@
         ]
       },
       {
-        "ClassID": 112,
+        "courseid": 112,
         "coursename": "A1 ITE 112 - Fundamentals of Programming",
         "section": "1A",
         "classschedule": [
@@ -100,7 +100,7 @@
         ]
       },
       {
-        "ClassID": 112,
+        "courseid": 112,
         "coursename": "A2 ITE 112 - Fundamentals of Programming",
         "section": "1A",
         "classschedule": [
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "ClassID": 113,
+        "courseid": 113,
         "coursename": "IS 113 - IS/IT Service Management",
         "section": "1A",
         "classschedule": [
@@ -122,7 +122,7 @@
   {
     "Courses": [
       {
-        "ClassID": "GE Art",
+        "courseid": "GE Art",
         "coursename": "GE ArtApp - Arts Appreciation",
         "section": "3A",
         "classschedule": [
@@ -131,7 +131,7 @@
         ]
       },
       {
-        "ClassID": 311,
+        "courseid": 311,
         "coursename": "A1 ITE 311 - Systems Analysis & Design",
         "section": "3A",
         "classschedule": [
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "ClassID": 311,
+        "courseid": 311,
         "coursename": "A2 ITE 311 - Systems Analysis & Design",
         "section": "3A",
         "classschedule": [
@@ -151,7 +151,7 @@
         ]
       },
       {
-        "ClassID": 312,
+        "courseid": 312,
         "coursename": "IS 312 - Business Process Management",
         "section": "3A",
         "classschedule": [
@@ -160,7 +160,7 @@
         ]
       },
       {
-        "ClassID": 313,
+        "courseid": 313,
         "coursename": "IS 313 - Quantitative Methods",
         "section": "3A",
         "classschedule": [
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "ClassID": 314,
+        "courseid": 314,
         "coursename": "IS 314 - IS Innovations and New Technologies",
         "section": "3A",
         "classschedule": [
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "ClassID": 315,
+        "courseid": 315,
         "coursename": "A1 IS 314 - Web Based Programming and Application",
         "section": "3A",
         "classschedule": [
@@ -188,7 +188,7 @@
         ]
       },
       {
-        "ClassID": 315,
+        "courseid": 315,
         "coursename": "A2 IS 314 - Web Based Programming and Application",
         "section": "3A",
         "classschedule": [
@@ -197,7 +197,7 @@
         ]
       },
       {
-        "ClassID": 316,
+        "courseid": 316,
         "coursename": "A1 IS 316 - IS/IT Security Management",
         "section": "3A",
         "classschedule": [
@@ -207,7 +207,7 @@
         ]
       },
       {
-        "ClassID": 316,
+        "courseid": 316,
         "coursename": "A2 IS 316 - IS/IT Security Management",
         "section": "3A",
         "classschedule": [
@@ -220,7 +220,7 @@
   {
     "Courses": [
       {
-        "ClassID": 411,
+        "courseid": 411,
         "coursename": "A1 IS 411 - CAPSTONE PROJECT 2",
         "section": "4A",
         "classschedule": [
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "ClassID": 411,
+        "courseid": 411,
         "coursename": "A2 IS 411 - CAPSTONE PROJECT 2",
         "section": "4A",
         "classschedule": [
@@ -240,7 +240,7 @@
         ]
       },
       {
-        "ClassID": 412,
+        "courseid": 412,
         "coursename": "IS 412 - IS Strategy, Management & Acquisition",
         "section": "4A",
         "classschedule": [
@@ -249,7 +249,7 @@
         ]
       },
       {
-        "ClassID": 413,
+        "courseid": 413,
         "coursename": "IS 413 - Business Intelligence",
         "section": "4A",
         "classschedule": [
@@ -262,7 +262,7 @@
   {
     "Courses": [
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "A1 ITE 211 - Data Structures and Algorithm",
         "section": "2A",
         "classschedule": [
@@ -272,7 +272,7 @@
         ]
       },
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "A2 ITE 211 - Data Structures and Algorithm",
         "section": "2A",
         "classschedule": [
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "ClassID": 212,
+        "courseid": 212,
         "coursename": "IS 212 - Professional Issues in Information System",
         "section": "2A",
         "classschedule": [
@@ -291,7 +291,7 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "A1 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2A",
         "classschedule": [
@@ -301,7 +301,7 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "A2 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2A",
         "classschedule": [
@@ -311,7 +311,7 @@
         ]
       },
       {
-        "ClassID": 214,
+        "courseid": 214,
         "coursename": "IS 214 - Organizational & Management Concepts",
         "section": "2A",
         "classschedule": [
@@ -320,7 +320,7 @@
         ]
       },
       {
-        "ClassID": 215,
+        "courseid": 215,
         "coursename": "A1 ITE 215 - Installation of Hardware and Software",
         "section": "2A",
         "classschedule": [
@@ -330,7 +330,7 @@
         ]
       },
       {
-        "ClassID": 215,
+        "courseid": 215,
         "coursename": "A2 ITE 215 - Installation of Hardware and Software",
         "section": "2A",
         "classschedule": [
@@ -344,7 +344,7 @@
   {
     "Courses": [
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "B1 ITE 211 - Data Structures and Algorithm",
         "section": "2B",
         "classschedule": [
@@ -354,7 +354,7 @@
         ]
       },
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "B2 ITE 211 - Data Structures and Algorithm",
         "section": "2B",
         "classschedule": [
@@ -364,7 +364,7 @@
         ]
       },
       {
-        "ClassID": 212,
+        "courseid": 212,
         "coursename": "IS 212 - Professional Issues in Information System",
         "section": "2B",
         "classschedule": [
@@ -373,7 +373,7 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "B1 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2B",
         "classschedule": [
@@ -383,7 +383,7 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "B2 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2B",
         "classschedule": [
@@ -393,7 +393,7 @@
         ]
       },
       {
-        "ClassID": 214,
+        "courseid": 214,
         "coursename": "IS 214 - Organizational & Management Concepts",
         "section": "2B",
         "classschedule": [
@@ -402,7 +402,7 @@
         ]
       },
       {
-        "ClassID": 215,
+        "courseid": 215,
         "coursename": "B1 ITE 215 - Installation of Hardware and Software",
         "section": "2B",
         "classschedule": [
@@ -412,22 +412,12 @@
         ]
       },
       {
-        "ClassID": 215,
+        "courseid": 215,
         "coursename": "B2 ITE 215 - Installation of Hardware and Software",
         "section": "2B",
         "classschedule": [
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Monday"], "Type": "overload", "name": "Juan Dela Cruz"},
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Thursday"], "Type": "regular", "name": "Juan Dela Cruz"},
-          {"duration": "2:00", "roomid": [303, 304, 305], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"}
-        ]
-      },
-      {
-        "ClassID": 215,
-        "coursename": "C2 ITE 215 - Installation of Hardware and Software",
-        "section": "2B",
-        "classschedule": [
-          {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"},
-          {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Monday"], "Type": "regular", "name": "Juan Dela Cruz"},
           {"duration": "2:00", "roomid": [303, 304, 305], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"}
         ]
       }
@@ -436,7 +426,7 @@
   {
     "Courses": [
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "C1 ITE 211 - Data Structures and Algorithm",
         "section": "2C",
         "classschedule": [
@@ -446,7 +436,7 @@
         ]
       },
       {
-        "ClassID": 211,
+        "courseid": 211,
         "coursename": "C2 ITE 211 - Data Structures and Algorithm",
         "section": "2C",
         "classschedule": [
@@ -455,7 +445,7 @@
         ]
       },
       {
-        "ClassID": 212,
+        "courseid": 212,
         "coursename": "IS 212 - Professional Issues in Information System",
         "section": "2C",
         "classschedule": [
@@ -464,7 +454,7 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "C1 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2C",
         "classschedule": [
@@ -474,17 +464,16 @@
         ]
       },
       {
-        "ClassID": 213,
+        "courseid": 213,
         "coursename": "C2 IS 213 - IT Infrastructure & Network Technologies",
         "section": "2C",
         "classschedule": [
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 5, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"},
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 5, "day": ["Thursday"], "Type": "overload", "name": "Juan Dela Cruz"},
-          {"duration": "2:00", "roomid": [303, 304, 305], "employeeid": 5, "day": ["Friday"], "Type": "regular", "name": "Juan Dela Cruz"}
         ]
       },
       {
-        "ClassID": 214,
+        "courseid": 214,
         "coursename": "IS 214 - Organizational & Management Concepts",
         "section": "2C",
         "classschedule": [
@@ -493,12 +482,22 @@
         ]
       },
       {
-        "ClassID": 215,
+        "courseid": 215,
         "coursename": "C1 ITE 215 - Installation of Hardware and Software",
         "section": "2C",
         "classschedule": [
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Thursday"], "Type": "regular", "name": "Juan Dela Cruz"},
           {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Friday"], "Type": "regular", "name": "Juan Dela Cruz"},
+          {"duration": "2:00", "roomid": [303, 304, 305], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "C2 ITE 215 - Installation of Hardware and Software",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"},
+          {"duration": "1:30", "roomid": [310, 208], "employeeid": 3, "day": ["Monday"], "Type": "regular", "name": "Juan Dela Cruz"},
           {"duration": "2:00", "roomid": [303, 304, 305], "employeeid": 3, "day": ["Tuesday"], "Type": "overload", "name": "Juan Dela Cruz"}
         ]
       }

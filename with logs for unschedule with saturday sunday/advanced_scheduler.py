@@ -131,14 +131,14 @@ class AdvancedSchoolScheduler:
             return start_time, end_time
         return None, None
     
-    def schedule_class(self, course_id: int, coursename: str, section: str, duration: int, roomids, employee_id: int) -> dict:
+    def schedule_class(self, ClassID: int, coursename: str, section: str, duration: int, roomids, employee_id: int) -> dict:
         if not isinstance(roomids, list):
             roomids = [roomids]
         start_time, end_time = self.find_available_slot(duration, section, employee_id, roomids)
         if start_time is None:
             return None
         class_info = {
-            'course_id': course_id,
+            'ClassID': ClassID,
             'coursename': coursename,
             'section': section,
             'start_time': start_time,
@@ -183,14 +183,14 @@ class AdvancedSchoolScheduler:
         self.room_schedules = {}
         self.conflicts = []
         unscheduled_classes = []
-        # Track used days for each (section, courseid)
+        # Track used days for each (section, ClassID)
         used_days_per_course = {}
         for class_group in class_data:
             for course in class_group['Courses']:
                 coursename = course.get('coursename', '')
                 section = course['section']
-                courseid = course['courseid']
-                key = (section, courseid)
+                ClassID = course['ClassID']
+                key = (section, ClassID)
                 if key not in used_days_per_course:
                     used_days_per_course[key] = set()
                 for schedule_item in course['classschedule']:
@@ -207,7 +207,7 @@ class AdvancedSchoolScheduler:
                     scheduled = None
                     for day in days_sorted:
                         scheduled = self.schedule_class_with_day(
-                            courseid,
+                            ClassID,
                             coursename,
                             section,
                             self.parse_duration(schedule_item['duration']),
@@ -221,7 +221,7 @@ class AdvancedSchoolScheduler:
                     if not scheduled:
                         # Add to unscheduled with all possible days for reference
                         unscheduled_classes.append({
-                            'course_id': courseid,
+                            'ClassID': ClassID,
                             'coursename': coursename,
                             'section': section,
                             'duration': self.parse_duration(schedule_item['duration']),
@@ -232,7 +232,7 @@ class AdvancedSchoolScheduler:
         self.unscheduled_classes = unscheduled_classes  # Store for later use
         return self.schedule
 
-    def schedule_class_with_day(self, course_id: int, coursename: str, section: str, duration: int, roomids, employee_id: int, day: str) -> dict:
+    def schedule_class_with_day(self, ClassID: int, coursename: str, section: str, duration: int, roomids, employee_id: int, day: str) -> dict:
         if not isinstance(roomids, list):
             roomids = [roomids]
         school_start = 8 * 60  # 8:00 AM
@@ -273,7 +273,7 @@ class AdvancedSchoolScheduler:
             if room_conflict:
                 continue
             class_info = {
-                'course_id': course_id,
+                'ClassID': ClassID,
                 'coursename': coursename,
                 'section': section,
                 'start_time': start_time,
@@ -305,7 +305,7 @@ class AdvancedSchoolScheduler:
         start_time = school_start
         end_time = start_time + duration
         class_info = {
-            'course_id': course_id,
+            'ClassID': ClassID,
             'coursename': coursename,
             'section': section,
             'start_time': start_time,
@@ -356,7 +356,7 @@ class AdvancedSchoolScheduler:
                     roomids = [roomids]
                 room_str = ','.join(str(r) for r in roomids)
                 print(f"  {class_info['start_time_str']} - {class_info['end_time_str']} | "
-                      f"Course {class_info['course_id']} | "
+                      f"Course {class_info['ClassID']} | "
                       f"Rooms {room_str} | "
                       f"Employee {class_info['employee_id']}")
         # Print room utilization
@@ -368,7 +368,7 @@ class AdvancedSchoolScheduler:
             print(f"\nRoom {roomid} Schedule:")
             for class_info in classes:
                 print(f"  {class_info['start_time_str']} - {class_info['end_time_str']} | "
-                      f"Course {class_info['course_id']} | "
+                      f"Course {class_info['ClassID']} | "
                       f"Section {class_info['section']} | "
                       f"Employee {class_info['employee_id']}")
         # Print employee schedules
@@ -384,7 +384,7 @@ class AdvancedSchoolScheduler:
                     roomids = [roomids]
                 room_str = ','.join(str(r) for r in roomids)
                 print(f"  {class_info['start_time_str']} - {class_info['end_time_str']} | "
-                      f"Course {class_info['course_id']} | "
+                      f"Course {class_info['ClassID']} | "
                       f"Section {class_info['section']} | "
                       f"Rooms {room_str}")
         # Print conflicts if any
@@ -404,7 +404,7 @@ class AdvancedSchoolScheduler:
     def export_schedule_csv(self, filename: str = "schedule.csv"):
         """Export schedule to CSV file (one row per class)"""
         fieldnames = [
-            'course_id', 'coursename', 'section', 'start_time_str', 'end_time_str', 'duration',
+            'ClassID', 'coursename', 'section', 'start_time_str', 'end_time_str', 'duration',
             'roomid', 'employee_id'
         ]
         with open(filename, 'w', newline='') as csvfile:
@@ -757,14 +757,15 @@ class AdvancedSchoolScheduler:
         time_slots = []
         time_to_row = {}
         current_row = 2
-        for hour in range(8, 17):
-            for minute in [0, 30]:
+        # Modified to use 1.5-hour blocks starting at 8:00 AM
+        for hour in range(8, 17, 1):  # 8:00 AM to 5:00 PM
+            for minute in [0]:  # Only start at XX:00
                 time_str = f"{hour:02d}:{minute:02d}"
                 time_to_row[time_str] = current_row
-                next_minute = minute + 30
+                next_minute = minute + 90  # 1.5-hour blocks
                 next_hour = hour
-                if next_minute >= 60:
-                    next_minute = 0
+                while next_minute >= 60:
+                    next_minute -= 60
                     next_hour += 1
                 if hour < 12:
                     current_time = f"{hour}:{minute:02d} AM"
@@ -831,6 +832,7 @@ class AdvancedSchoolScheduler:
                     # Mark all cells as merged
                     for row in range(start_row, end_row + 1):
                         merged_tracker.add((row, col))
+                    print(f"Merging: {class_info['coursename']} | Section: {class_info['section']} | Room: {roomid_str} | Day: {day} | Rows: {start_row}-{end_row} | Col: {col}")
                     ws.merge_cells(start_row=start_row, start_column=col, end_row=end_row, end_column=col)
                     cell = ws.cell(row=start_row, column=col)
                     cell.value = class_text
@@ -893,14 +895,14 @@ class AdvancedSchoolScheduler:
         print("UNSCHEDULED (NOT PLOTTED) CLASSES")
         print("="*80)
         for idx, class_info in enumerate(self.unscheduled_classes, 1):
-            print(f"{idx}. Course {class_info.get('course_id', '')} | {class_info.get('coursename', '')} | Section {class_info.get('section', '')} | Room {class_info.get('roomid', '')} | Employee {class_info.get('employee_id', '')} | Day {class_info.get('day', '')} | Duration {class_info.get('duration', '')}")
+            print(f"{idx}. Course {class_info.get('ClassID', '')} | {class_info.get('coursename', '')} | Section {class_info.get('section', '')} | Room {class_info.get('roomid', '')} | Employee {class_info.get('employee_id', '')} | Day {class_info.get('day', '')} | Duration {class_info.get('duration', '')}")
 
     def export_unscheduled_classes_csv(self, filename="unscheduled_classes.csv"):
         """Export the list of unscheduled classes to a CSV file."""
         if not self.unscheduled_classes:
             print("\nNo unscheduled classes to export.")
             return
-        fieldnames = ['course_id', 'coursename', 'section', 'roomid', 'employee_id', 'day', 'duration']
+        fieldnames = ['ClassID', 'coursename', 'section', 'roomid', 'employee_id', 'day', 'duration']
         with open(filename, 'w', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -1022,28 +1024,49 @@ class AdvancedSchoolScheduler:
         return "No available slot (all times conflict with break or out of hours)"
 
     def generate_schedule_backtracking(self, class_data: list) -> bool:
-        """
-        Backtracking scheduler: schedules all classes with exact requested day and duration, no overlaps/conflicts, and no two sessions of the same course/section on the same day.
-        Returns True if a complete schedule is found, otherwise False.
-        """
+        # Clear the log file before starting
+        with open('logs.txt', 'w') as f:
+            f.write("=== Scheduling Log ===\n\n")
         self.schedule = []
         self.sections = {}
         self.employees = {}
         self.room_schedules = {}
         self.conflicts = []
         self.unscheduled_classes = []
+
+        def log_conflict(req, day, start_time, conflict_type, conflicting_class=None):
+            conflict_msg = f"CONFLICT for {req['coursename']} | Section {req['section']} | Room {req['roomid']} | Emp {req['employee_id']} | Day {day} | Time {self.format_time(start_time)}\n"
+            conflict_msg += f"  Type: {conflict_type}\n"
+            if conflicting_class:
+                conflict_msg += f"  Conflicts with: {conflicting_class['coursename']} | Section {conflicting_class['section']} | Room {conflicting_class['roomid']} | Emp {conflicting_class['employee_id']} | Time {conflicting_class['start_time_str']}-{conflicting_class['end_time_str']}\n"
+            print(conflict_msg)  # For debugging
+            with open('logs.txt', 'a') as f:
+                f.write(conflict_msg)
+
+        def log_assignment(req, day, start_time, action):
+            msg = f"{action}: {req['coursename']} | Section {req['section']} | Room {req['roomid']} | Emp {req['employee_id']} | Day {day} | Time {self.format_time(start_time)}-{self.format_time(start_time + req['duration'])}\n"
+            print(msg)  # For debugging
+            with open('logs.txt', 'a') as f:
+                f.write(msg)
+
+        def log_unscheduled(req, reason):
+            msg = f"UNSCHEDULED: {req['coursename']} | Section {req['section']} | Room {req['roomid']} | Emp {req['employee_id']} | Day {req['days']} | Duration {self.format_duration(req['duration'])}\n  Reason: {reason}\n"
+            print(msg)  # For debugging
+            with open('logs.txt', 'a') as f:
+                f.write(msg)
+
         requests = []
         for class_group in class_data:
             for course in class_group['Courses']:
                 coursename = course.get('coursename', '')
                 section = course['section']
-                courseid = course['courseid']
+                ClassID = course['ClassID']
                 for sched in course['classschedule']:
                     days = sched.get('day', ['Monday'])
                     if isinstance(days, str):
                         days = [days]
                     requests.append({
-                        'courseid': courseid,
+                        'ClassID': ClassID,
                         'coursename': coursename,
                         'section': section,
                         'duration': self.parse_duration(sched['duration']),
@@ -1052,35 +1075,129 @@ class AdvancedSchoolScheduler:
                         'days': days,
                         'orig_sched': sched
                     })
-        requests.sort(key=lambda x: x['duration'], reverse=True)
-        school_start = 8 * 60
-        school_end = 17 * 60
-        slot_step = 30
+
+        # Sort by duration AND number of available slots (most constrained first)
+        def get_slot_count(req):
+            count = 0
+            for day in req['days']:
+                for start_time in range(school_start, school_end - req['duration'] + 1, slot_step):
+                    if not self.is_in_break_time(start_time, req['duration']):
+                        count += 1
+            return count
+        requests.sort(key=lambda x: (-x['duration'], get_slot_count(x)))
+
+        school_start = 8 * 60  # 8:00 AM
+        school_end = 17 * 60   # 5:00 PM
+        slot_step = 90  # 1.5-hour blocks
         used_days_per_course = {}
+
+        def get_slot_score(start_time, duration, day, section):
+            """Score a potential slot based on how well it fills gaps"""
+            score = 0
+            
+            # Prefer morning slots slightly
+            if start_time < 12 * 60:
+                score += 5
+            
+            # Check if this slot would fill a gap
+            end_time = start_time + duration
+            has_class_before = False
+            has_class_after = False
+            
+            # Check for classes before this slot
+            for c in self.sections.get(section, []):
+                if c['day'] == day:
+                    if c['end_time'] == start_time:  # Perfect continuation
+                        score += 20
+                        has_class_before = True
+                    elif c['start_time'] == end_time:  # Perfect continuation after
+                        score += 20
+                        has_class_after = True
+            
+            # Bonus for filling isolated gaps
+            if has_class_before and has_class_after:
+                score += 30  # Extra bonus for filling a perfect gap
+            
+            # Penalize creating new gaps
+            if not has_class_before and not has_class_after:
+                score -= 10
+            
+            return score
+
+        def get_best_slot(req, day):
+            """Find the best available slot for a class based on gap filling"""
+            best_score = float('-inf')
+            best_time = None
+            
+            for start_time in range(school_start, school_end - req['duration'] + 1, slot_step):
+                if can_assign(req, day, start_time):
+                    score = get_slot_score(start_time, req['duration'], day, req['section'])
+                    if score > best_score:
+                        best_score = score
+                        best_time = start_time
+            
+            return best_time
+
         def can_assign(req, day, start_time):
-            end_time = start_time + req['duration']
-            # No two sessions of the same course/section on the same day
-            key = (req['section'], req['courseid'])
-            if key in used_days_per_course and day in used_days_per_course[key]:
-                return False
             if self.is_in_break_time(start_time, req['duration']):
+                log_conflict(req, day, start_time, "Break time conflict")
+                return False
+            key = (req['section'], req['ClassID'])
+            if key in used_days_per_course and day in used_days_per_course[key]:
+                log_conflict(req, day, start_time, "Same course/section already scheduled on this day")
                 return False
             for c in self.sections.get(req['section'], []):
-                if c.get('day') == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                if c['day'] == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                    log_conflict(req, day, start_time, "Section time conflict", c)
                     return False
             for c in self.employees.get(req['employee_id'], []):
-                if c.get('day') == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                if c['day'] == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                    log_conflict(req, day, start_time, "Employee time conflict", c)
                     return False
             roomids = req['roomid'] if isinstance(req['roomid'], list) else [req['roomid']]
             for roomid in roomids:
                 for c in self.room_schedules.get(roomid, []):
-                    if c.get('day') == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                    if c['day'] == day and self.is_time_conflict(start_time, req['duration'], c['start_time'], c['duration']):
+                        log_conflict(req, day, start_time, f"Room {roomid} time conflict", c)
                         return False
             return True
+
+        def backtrack(idx, visited=None):
+            if visited is None:
+                visited = set()
+            if idx == len(requests):
+                return True
+            req = requests[idx]
+            key = (req['section'], req['ClassID'])
+            available_days = [d for d in req['days'] if d not in used_days_per_course.get(key, set())]
+            day_scores = []
+            for day in available_days:
+                best_time = get_best_slot(req, day)
+                if best_time is not None:
+                    score = get_slot_score(best_time, req['duration'], day, req['section'])
+                    day_scores.append((score, day, best_time))
+            if not day_scores:
+                log_unscheduled(req, "No available time slots found that satisfy all constraints")
+                return False
+            day_scores.sort(reverse=True)
+            for score, day, start_time in day_scores:
+                if can_assign(req, day, start_time):
+                    class_info = assign(req, day, start_time)
+                    log_assignment(req, day, start_time, "ASSIGNED")
+                    if backtrack(idx + 1, visited):
+                        return True
+                    unassign(req, class_info)
+                    log_assignment(req, day, start_time, "UNASSIGNED (backtracking)")
+                else:
+                    # If can't assign, the reason will be logged by can_assign
+                    continue
+            log_unscheduled(req, "All possible slots tried and failed due to conflicts")
+            return False
+
         def assign(req, day, start_time):
             end_time = start_time + req['duration']
             class_info = {
-                'course_id': req['courseid'],
+                'ClassID': req['ClassID'],
                 'coursename': req['coursename'],
                 'section': req['section'],
                 'start_time': start_time,
@@ -1098,11 +1215,12 @@ class AdvancedSchoolScheduler:
             roomids = req['roomid'] if isinstance(req['roomid'], list) else [req['roomid']]
             for roomid in roomids:
                 self.room_schedules.setdefault(roomid, []).append(class_info)
-            key = (req['section'], req['courseid'])
+            key = (req['section'], req['ClassID'])
             if key not in used_days_per_course:
                 used_days_per_course[key] = set()
             used_days_per_course[key].add(day)
             return class_info
+
         def unassign(req, class_info):
             self.schedule.remove(class_info)
             self.sections[req['section']].remove(class_info)
@@ -1110,28 +1228,15 @@ class AdvancedSchoolScheduler:
             roomids = req['roomid'] if isinstance(req['roomid'], list) else [req['roomid']]
             for roomid in roomids:
                 self.room_schedules[roomid].remove(class_info)
-            key = (req['section'], req['courseid'])
+            key = (req['section'], req['ClassID'])
             if key in used_days_per_course and class_info['day'] in used_days_per_course[key]:
                 used_days_per_course[key].remove(class_info['day'])
-        def backtrack(idx):
-            if idx == len(requests):
-                return True
-            req = requests[idx]
-            key = (req['section'], req['courseid'])
-            available_days = [d for d in req['days'] if d not in used_days_per_course.get(key, set())]
-            for day in available_days:
-                for start_time in range(school_start, school_end - req['duration'] + 1, slot_step):
-                    if can_assign(req, day, start_time):
-                        class_info = assign(req, day, start_time)
-                        if backtrack(idx + 1):
-                            return True
-                        unassign(req, class_info)
-            return False
+
         success = backtrack(0)
         if not success:
             self.unscheduled_classes = [
                 {
-                    'course_id': req['courseid'],
+                    'ClassID': req['ClassID'],
                     'coursename': req['coursename'],
                     'section': req['section'],
                     'duration': req['duration'],
@@ -1140,7 +1245,7 @@ class AdvancedSchoolScheduler:
                     'day': req['days']
                 }
                 for req in requests if not any(
-                    c['course_id'] == req['courseid'] and c['section'] == req['section'] and c['duration'] == req['duration'] and c['roomid'] == req['roomid'] and c['employee_id'] == req['employee_id'] for c in self.schedule
+                    c['ClassID'] == req['ClassID'] and c['section'] == req['section'] and c['duration'] == req['duration'] and c['roomid'] == req['roomid'] and c['employee_id'] == req['employee_id'] for c in self.schedule
                 )
             ]
         return success
@@ -1157,13 +1262,13 @@ class AdvancedSchoolScheduler:
             for course in class_group['Courses']:
                 coursename = course.get('coursename', '')
                 section = course['section']
-                courseid = course['courseid']
+                ClassID = course['ClassID']
                 for sched in course['classschedule']:
                     days = sched.get('day', ['Monday'])
                     if isinstance(days, str):
                         days = [days]
                     requests.append({
-                        'courseid': courseid,
+                        'ClassID': ClassID,
                         'coursename': coursename,
                         'section': section,
                         'duration': self.parse_duration(sched['duration']),
@@ -1179,7 +1284,7 @@ class AdvancedSchoolScheduler:
             chrom = []
             used_days_per_course = {}
             for req in requests:
-                key = (req['section'], req['courseid'])
+                key = (req['section'], req['ClassID'])
                 available_days = [d for d in req['days'] if d not in used_days_per_course.get(key, set())]
                 tries = 0
                 while tries < 10 and available_days:
@@ -1207,7 +1312,7 @@ class AdvancedSchoolScheduler:
                         tries += 1
                         continue
                     chrom.append({
-                        'courseid': req['courseid'],
+                        'ClassID': req['ClassID'],
                         'coursename': req['coursename'],
                         'section': req['section'],
                         'duration': req['duration'],
@@ -1230,7 +1335,7 @@ class AdvancedSchoolScheduler:
                 return -10000 * (len(requests) - len(chrom))
             used_days_per_course = {}
             for a in chrom:
-                key = (a['section'], a['courseid'])
+                key = (a['section'], a['ClassID'])
                 if key not in used_days_per_course:
                     used_days_per_course[key] = set()
                 if a['day'] in used_days_per_course[key]:
@@ -1251,17 +1356,17 @@ class AdvancedSchoolScheduler:
             return 10000  # Perfect
         def repair(chrom):
             chrom = copy.deepcopy(chrom)
-            scheduled_keys = set((c['courseid'], c['section'], c['duration'], str(c['roomid']), c['employee_id']) for c in chrom)
+            scheduled_keys = set((c['ClassID'], c['section'], c['duration'], str(c['roomid']), c['employee_id']) for c in chrom)
             used_days_per_course = {}
             for c in chrom:
-                key = (c['section'], c['courseid'])
+                key = (c['section'], c['ClassID'])
                 if key not in used_days_per_course:
                     used_days_per_course[key] = set()
                 used_days_per_course[key].add(c['day'])
             for req in requests:
-                key = (req['section'], req['courseid'])
+                key = (req['section'], req['ClassID'])
                 available_days = [d for d in req['days'] if d not in used_days_per_course.get(key, set())]
-                if (req['courseid'], req['section'], req['duration'], str(req['roomid']), req['employee_id']) in scheduled_keys:
+                if (req['ClassID'], req['section'], req['duration'], str(req['roomid']), req['employee_id']) in scheduled_keys:
                     continue
                 inserted = False
                 for day in available_days:
@@ -1282,7 +1387,7 @@ class AdvancedSchoolScheduler:
                         if conflict:
                             continue
                         chrom.append({
-                            'courseid': req['courseid'],
+                            'ClassID': req['ClassID'],
                             'coursename': req['coursename'],
                             'section': req['section'],
                             'duration': req['duration'],
@@ -1305,7 +1410,7 @@ class AdvancedSchoolScheduler:
             i = 0
             while i < len(chrom):
                 a = chrom[i]
-                key = (a['section'], a['courseid'])
+                key = (a['section'], a['ClassID'])
                 if chrom.count(a) > 1 or (key in used_days_per_course and list(used_days_per_course[key]).count(a['day']) > 1):
                     chrom.pop(i)
                     continue
@@ -1343,13 +1448,13 @@ class AdvancedSchoolScheduler:
             for course in class_group['Courses']:
                 coursename = course.get('coursename', '')
                 section = course['section']
-                courseid = course['courseid']
+                ClassID = course['ClassID']
                 for sched in course['classschedule']:
                     days = sched.get('day', ['Monday'])
                     if isinstance(days, str):
                         days = [days]
                     requests.append({
-                        'courseid': courseid,
+                        'ClassID': ClassID,
                         'coursename': coursename,
                         'section': section,
                         'duration': self.parse_duration(sched['duration']),
@@ -1364,13 +1469,13 @@ class AdvancedSchoolScheduler:
         def get_used_days_per_course(schedule):
             used = {}
             for c in schedule:
-                key = (c['section'], c['course_id'])
+                key = (c['section'], c['ClassID'])
                 if key not in used:
                     used[key] = set()
                 used[key].add(c['day'])
             return used
         def can_assign(req, day, start_time, schedule, used_days_per_course, ignore_class=None):
-            key = (req['section'], req['courseid'])
+            key = (req['section'], req['ClassID'])
             if key in used_days_per_course and day in used_days_per_course[key]:
                 return False
             if self.is_in_break_time(start_time, req['duration']):
@@ -1390,7 +1495,7 @@ class AdvancedSchoolScheduler:
         def assign(req, day, start_time, schedule, used_days_per_course):
             end_time = start_time + req['duration']
             class_info = {
-                'course_id': req['courseid'],
+                'ClassID': req['ClassID'],
                 'coursename': req['coursename'],
                 'section': req['section'],
                 'start_time': start_time,
@@ -1403,21 +1508,21 @@ class AdvancedSchoolScheduler:
                 'end_time_str': self.format_time(end_time)
             }
             schedule.append(class_info)
-            key = (req['section'], req['courseid'])
+            key = (req['section'], req['ClassID'])
             if key not in used_days_per_course:
                 used_days_per_course[key] = set()
             used_days_per_course[key].add(day)
             return class_info
         def unassign(class_info, schedule, used_days_per_course):
             schedule.remove(class_info)
-            key = (class_info['section'], class_info['course_id'])
+            key = (class_info['section'], class_info['ClassID'])
             if key in used_days_per_course and class_info['day'] in used_days_per_course[key]:
                 used_days_per_course[key].remove(class_info['day'])
         def try_schedule_all(schedule, used_days_per_course, unscheduled, visited):
             if not unscheduled:
                 return True
             req = unscheduled[0]
-            key = (req['section'], req['courseid'])
+            key = (req['section'], req['ClassID'])
             available_days = [d for d in req['days'] if d not in used_days_per_course.get(key, set())]
             for day in available_days:
                 for start_time in range(school_start, school_end - req['duration'] + 1, slot_step):
@@ -1442,14 +1547,14 @@ class AdvancedSchoolScheduler:
                         # Try to move all blocking classes recursively
                         can_move_all = True
                         for block in blocking:
-                            block_key = (block['section'], block['course_id'], block['duration'], str(block['roomid']), block['employee_id'])
-                            req_key = (req['section'], req['courseid'], req['duration'], str(req['roomid']), req['employee_id'])
+                            block_key = (block['section'], block['ClassID'], block['duration'], str(block['roomid']), block['employee_id'])
+                            req_key = (req['section'], req['ClassID'], req['duration'], str(req['roomid']), req['employee_id'])
                             if block_key in visited or req_key in visited:
                                 can_move_all = False
                                 break
                             unassign(block, schedule, used_days_per_course)
                             block_req = {
-                                'courseid': block['course_id'],
+                                'ClassID': block['ClassID'],
                                 'coursename': block['coursename'],
                                 'section': block['section'],
                                 'duration': block['duration'],
@@ -1470,8 +1575,8 @@ class AdvancedSchoolScheduler:
         # Build initial schedule and unscheduled list
         schedule = copy.deepcopy(self.schedule)
         used_days_per_course = get_used_days_per_course(schedule)
-        scheduled_keys = set((c['course_id'], c['section'], c['duration'], str(c['roomid']), c['employee_id']) for c in schedule)
-        unscheduled = [req for req in requests if (req['courseid'], req['section'], req['duration'], str(req['roomid']), req['employee_id']) not in scheduled_keys]
+        scheduled_keys = set((c['ClassID'], c['section'], c['duration'], str(c['roomid']), c['employee_id']) for c in schedule)
+        unscheduled = [req for req in requests if (req['ClassID'], req['section'], req['duration'], str(req['roomid']), req['employee_id']) not in scheduled_keys]
         success = try_schedule_all(schedule, used_days_per_course, unscheduled, set())
         if success:
             # Rebuild all internal structures
@@ -1491,7 +1596,7 @@ class AdvancedSchoolScheduler:
             # Update unscheduled_classes
             self.unscheduled_classes = [
                 {
-                    'course_id': req['courseid'],
+                    'ClassID': req['ClassID'],
                     'coursename': req['coursename'],
                     'section': req['section'],
                     'duration': req['duration'],
@@ -1509,7 +1614,7 @@ def main():
         {
             'Courses': [
                 {
-                    'courseid': 1,
+                    'ClassID': 1,
                     'section': '2A',
                     'classschedule': [ 
                         {'duration': '3:30', 'roomid': 1, 'employeeid': 120},
@@ -1518,7 +1623,7 @@ def main():
                     ]
                 },
                 {
-                    'courseid': 2,
+                    'ClassID': 2,
                     'section': '2A',
                     'classschedule': [
                         {'duration': '1:00', 'roomid': 1, 'employeeid': 120},
@@ -1530,7 +1635,7 @@ def main():
         {
             'Courses': [
                 {
-                    'courseid': 3,
+                    'ClassID': 3,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:00', 'roomid': 1, 'employeeid': 120},
@@ -1538,7 +1643,7 @@ def main():
                     ]
                 },
                 {
-                    'courseid': 4,
+                    'ClassID': 4,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:00', 'roomid': 1, 'employeeid': 120},
@@ -1547,7 +1652,7 @@ def main():
             ]
         },
         {
-            'courseid': 99,
+            'ClassID': 99,
             'section': '2A',
             'classschedule': [
                 {'duration': '20:00', 'roomid': 1, 'employeeid': 120}  # Impossible duration

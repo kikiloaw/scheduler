@@ -1,18 +1,372 @@
-UNSCHEDULED: CN 321 - Networking | Section 2A | Room [16, 17] | Emp 6 | Day ['Saturday'] | Duration 1:00
-UNSCHEDULED: EL 316 - Electronics | Section 2B | Room 73 | Emp 11 | Day ['Monday'] | Duration 2:30
-UNSCHEDULED: FN 303 - Finance | Section 2C | Room 155 | Emp 10 | Day ['Monday'] | Duration 1:30
-UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 116 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
-UNSCHEDULED: DS 401 - Data Structures | Section 3A | Room 181 | Emp 14 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
-UNSCHEDULED: AL 400 - Algorithms | Section 3A | Room 117 | Emp 1 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
-UNSCHEDULED: AL 400 - Algorithms | Section 3A | Room 182 | Emp 1 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
-UNSCHEDULED: CA 403 - Computer Architecture | Section 3A | Room 300 | Emp 2 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
-UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 118 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
-UNSCHEDULED: OS 404 - Operating Systems | Section 3A | Room 199 | Emp 3 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
-UNSCHEDULED: CN 405 - Computer Networks | Section 3A | Room 77 | Emp 4 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:30
-UNSCHEDULED: CN 405 - Computer Networks | Section 3A | Room 200 | Emp 4 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 1:00
-UNSCHEDULED: DM 406 - Discrete Mathematics | Section 3A | Room 201 | Emp 5 | Day ['Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'] | Duration 2:00
-UNSCHEDULED: AE 410 - Advanced Electronics | Section 3B | Room 74 | Emp 9 | Day ['Monday'] | Duration 2:30
-UNSCHEDULED: MT 414 - Manufacturing | Section 3B | Room 188 | Emp 13 | Day ['Monday'] | Duration 1:00
-UNSCHEDULED: FM 423 - Financial Modeling | Section 3C | Room 218 | Emp 8 | Day ['Monday'] | Duration 1:30
-UNSCHEDULED: GN 431 - Genetics | Section 3D | Room 13 | Emp 2 | Day ['Monday'] | Duration 1:30
-UNSCHEDULED: CA 439 - Cultural Anthropology | Section 3E | Room 240 | Emp 10 | Day ['Monday'] | Duration 2:00
+=== UNSCHEDULED (UNPLOTTED) CLASSES ===
+
+
+UNSCHEDULED CLASS:
+Course: B1 ITE 111 - Introduction to Computing
+Section: 1B
+Room: [208, 310]
+Employee: 5
+Day: ['Monday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 5 conflict on Monday with: B2 IS 213 - IT Infrastructure & Network Technologies 2B, A1 ITE 111 - Introduction to Computing 1A, IS 412 - IS Strategy, Management & Acquisition 4A, C1 IS 213 - IT Infrastructure & Network Technologies 2C
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B2 ITE 111 - Introduction to Computing
+Section: 1B
+Room: [208, 310]
+Employee: 5
+Day: ['Monday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 5 conflict on Monday with: B2 IS 213 - IT Infrastructure & Network Technologies 2B, A1 ITE 111 - Introduction to Computing 1A, IS 412 - IS Strategy, Management & Acquisition 4A, C1 IS 213 - IT Infrastructure & Network Technologies 2C
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: IS 113 - IS/IT Service Management
+Section: 1B
+Room: [303, 304, 305]
+Employee: 7
+Day: ['Friday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 7 conflict on Friday with: IS 113 - IS/IT Service Management 1A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 ITE 111 - Introduction to Computing
+Section: 1A
+Room: [208, 310]
+Employee: 5
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 5 conflict on Tuesday with: A2 ITE 111 - Introduction to Computing 1A, B2 ITE 111 - Introduction to Computing 1B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 ITE 112 - Fundamentals of Programming
+Section: 1A
+Room: [208, 310]
+Employee: 2
+Day: ['Monday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 2 conflict on Monday with: A1 IS 213 - IT Infrastructure & Network Technologies 2A, B1 ITE 112 - Fundamentals of Programming 1B, B2 ITE 112 - Fundamentals of Programming 1B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 ITE 112 - Fundamentals of Programming
+Section: 1A
+Room: [303, 304, 305]
+Employee: 2
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 2 conflict on Friday with: A2 ITE 112 - Fundamentals of Programming 1A, B1 IS 213 - IT Infrastructure & Network Technologies 2B, A1 IS 213 - IT Infrastructure & Network Technologies 2A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: IS 113 - IS/IT Service Management
+Section: 1A
+Room: [303, 304, 305]
+Employee: 7
+Day: ['Tuesday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 ITE 311 - Systems Analysis & Design
+Section: 3A
+Room: [303, 304, 305]
+Employee: 1
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 1 conflict on Friday with: A1 IS 411 - CAPSTONE PROJECT 2 4A, A1 IS 411 - CAPSTONE PROJECT 2 4A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: IS 312 - Business Process Management
+Section: 3A
+Room: [303, 304, 305]
+Employee: 6
+Day: ['Friday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 IS 314 - Web Based Programming and Application
+Section: 3A
+Room: [208, 310]
+Employee: 8
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 8 conflict on Tuesday with: A1 IS 314 - Web Based Programming and Application 3A
+  - Section 3A conflict on Tuesday with: A1 IS 314 - Web Based Programming and Application 3A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 IS 314 - Web Based Programming and Application
+Section: 3A
+Room: [303, 304, 305]
+Employee: 8
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 8 conflict on Friday with: A2 IS 314 - Web Based Programming and Application 3A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 IS 316 - IS/IT Security Management
+Section: 3A
+Room: [208, 310]
+Employee: 10
+Day: ['Thursday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A2 IS 316 - IS/IT Security Management
+Section: 3A
+Room: [208, 310]
+Employee: 10
+Day: ['Monday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A2 IS 316 - IS/IT Security Management
+Section: 3A
+Room: [208, 310]
+Employee: 10
+Day: ['Thursday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A2 IS 411 - CAPSTONE PROJECT 2
+Section: 4A
+Room: [310, 208]
+Employee: 1
+Day: ['Wednesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 1 conflict on Wednesday with: A2 ITE 311 - Systems Analysis & Design 3A, IS 214 - Organizational & Management Concepts 2C, A1 IS 411 - CAPSTONE PROJECT 2 4A, A1 ITE 311 - Systems Analysis & Design 3A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A2 ITE 211 - Data Structures and Algorithm
+Section: 2A
+Room: [208, 310]
+Employee: 9
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 9 conflict on Tuesday with: A1 ITE 211 - Data Structures and Algorithm 2A, B1 ITE 211 - Data Structures and Algorithm 2B, B1 ITE 211 - Data Structures and Algorithm 2B, C1 ITE 211 - Data Structures and Algorithm 2C
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A2 IS 213 - IT Infrastructure & Network Technologies
+Section: 2A
+Room: [303, 304, 305]
+Employee: 2
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 2 conflict on Friday with: A2 ITE 112 - Fundamentals of Programming 1A, B1 IS 213 - IT Infrastructure & Network Technologies 2B, A1 IS 213 - IT Infrastructure & Network Technologies 2A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: A1 ITE 215 - Installation of Hardware and Software
+Section: 2A
+Room: [303, 304, 305]
+Employee: 3
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 3 conflict on Friday with: C1 ITE 215 - Installation of Hardware and Software 2C, C2 ITE 215 - Installation of Hardware and Software 2B, A2 ITE 215 - Installation of Hardware and Software 2A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B2 ITE 211 - Data Structures and Algorithm
+Section: 2B
+Room: [303, 304, 305]
+Employee: 9
+Day: ['Tuesday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 9 conflict on Tuesday with: A1 ITE 211 - Data Structures and Algorithm 2A, B1 ITE 211 - Data Structures and Algorithm 2B, B1 ITE 211 - Data Structures and Algorithm 2B, C1 ITE 211 - Data Structures and Algorithm 2C
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: IS 212 - Professional Issues in Information System
+Section: 2B
+Room: [303, 304, 305]
+Employee: 4
+Day: ['Friday']
+Duration: 1:30
+REASON: No available time slots found
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B1 IS 213 - IT Infrastructure & Network Technologies
+Section: 2B
+Room: [310, 208]
+Employee: 2
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 2 conflict on Tuesday with: B1 ITE 112 - Fundamentals of Programming 1B, A2 IS 213 - IT Infrastructure & Network Technologies 2A, B2 ITE 112 - Fundamentals of Programming 1B, A1 ITE 112 - Fundamentals of Programming 1A, A1 IS 213 - IT Infrastructure & Network Technologies 2A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B1 IS 213 - IT Infrastructure & Network Technologies
+Section: 2B
+Room: [310, 208]
+Employee: 2
+Day: ['Thursday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 2 conflict on Thursday with: A2 IS 213 - IT Infrastructure & Network Technologies 2A, A2 ITE 112 - Fundamentals of Programming 1A, B1 ITE 112 - Fundamentals of Programming 1B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B1 IS 213 - IT Infrastructure & Network Technologies
+Section: 2B
+Room: [303, 304, 305]
+Employee: 2
+Day: ['Friday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 2 conflict on Friday with: A2 ITE 112 - Fundamentals of Programming 1A, B1 IS 213 - IT Infrastructure & Network Technologies 2B, A1 IS 213 - IT Infrastructure & Network Technologies 2A
+  - Section 2B conflict on Friday with: B1 IS 213 - IT Infrastructure & Network Technologies 2B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B1 ITE 215 - Installation of Hardware and Software
+Section: 2B
+Room: [303, 304, 305]
+Employee: 3
+Day: ['Tuesday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 3 conflict on Tuesday with: C1 ITE 215 - Installation of Hardware and Software 2C, A2 ITE 215 - Installation of Hardware and Software 2A, C2 ITE 215 - Installation of Hardware and Software 2B, B1 ITE 215 - Installation of Hardware and Software 2B
+  - Section 2B conflict on Tuesday with: B1 ITE 215 - Installation of Hardware and Software 2B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: B2 ITE 215 - Installation of Hardware and Software
+Section: 2B
+Room: [303, 304, 305]
+Employee: 3
+Day: ['Tuesday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 3 conflict on Tuesday with: C1 ITE 215 - Installation of Hardware and Software 2C, A2 ITE 215 - Installation of Hardware and Software 2A, C2 ITE 215 - Installation of Hardware and Software 2B, B1 ITE 215 - Installation of Hardware and Software 2B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: C2 ITE 215 - Installation of Hardware and Software
+Section: 2B
+Room: [310, 208]
+Employee: 3
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 3 conflict on Tuesday with: C1 ITE 215 - Installation of Hardware and Software 2C, A2 ITE 215 - Installation of Hardware and Software 2A, C2 ITE 215 - Installation of Hardware and Software 2B, B1 ITE 215 - Installation of Hardware and Software 2B
+  - Section 2B conflict on Tuesday with: C2 ITE 215 - Installation of Hardware and Software 2B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: C2 ITE 211 - Data Structures and Algorithm
+Section: 2C
+Room: [208, 310]
+Employee: 9
+Day: ['Friday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 9 conflict on Friday with: B2 ITE 211 - Data Structures and Algorithm 2B, A1 ITE 211 - Data Structures and Algorithm 2A, C1 ITE 211 - Data Structures and Algorithm 2C, A2 ITE 211 - Data Structures and Algorithm 2A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: C1 IS 213 - IT Infrastructure & Network Technologies
+Section: 2C
+Room: [303, 304, 305]
+Employee: 5
+Day: ['Tuesday']
+Duration: 2:00
+CONFLICTS:
+  - Employee 5 conflict on Tuesday with: A2 ITE 111 - Introduction to Computing 1A, B2 ITE 111 - Introduction to Computing 1B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: C2 IS 213 - IT Infrastructure & Network Technologies
+Section: 2C
+Room: [310, 208]
+Employee: 5
+Day: ['Tuesday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 5 conflict on Tuesday with: A2 ITE 111 - Introduction to Computing 1A, B2 ITE 111 - Introduction to Computing 1B
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: IS 214 - Organizational & Management Concepts
+Section: 2C
+Room: [303, 304, 305]
+Employee: 1
+Day: ['Thursday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 1 conflict on Thursday with: A2 IS 411 - CAPSTONE PROJECT 2 4A, IS 214 - Organizational & Management Concepts 2B, A2 ITE 311 - Systems Analysis & Design 3A, A2 IS 411 - CAPSTONE PROJECT 2 4A
+
+==================================================
+
+UNSCHEDULED CLASS:
+Course: C1 ITE 215 - Installation of Hardware and Software
+Section: 2C
+Room: [310, 208]
+Employee: 3
+Day: ['Thursday']
+Duration: 1:30
+CONFLICTS:
+  - Employee 3 conflict on Thursday with: A1 ITE 215 - Installation of Hardware and Software 2A, IS 313 - Quantitative Methods 3A, B2 ITE 215 - Installation of Hardware and Software 2B, B1 ITE 215 - Installation of Hardware and Software 2B, A2 ITE 215 - Installation of Hardware and Software 2A
+
+==================================================

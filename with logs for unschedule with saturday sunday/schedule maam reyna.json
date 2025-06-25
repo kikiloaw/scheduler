@@ -1,0 +1,85 @@
+[
+  
+  {
+    "Courses": [
+      {
+        "courseid": 101,
+        "coursename": "ITE 111 - Introduction to Computing (1A-1)",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [206, 207], "employeeid": 1, "day": ["Monday","Friday"], "Type": "regular"},
+	        {"duration": "1:30", "roomid": [206, 207], "employeeid": 1, "day": ["Monday","Friday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": [307, 308], "employeeid": 1, "day": ["Monday","Friday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": [307, 308], "employeeid": 1, "day": ["Monday","Friday"], "Type": "regular"}
+        ]
+      },
+
+    
+      {
+        "courseid": 103,
+        "coursename": "ITE 112 - Fundamentals of Programming (1A-1)",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [206, 207], "employeeid": 2, "day": ["Tuesday","Thursday"], "Type": "regular"},
+	        {"duration": "1:30", "roomid": [206, 207], "employeeid": 2, "day": ["Tuesday","Thursday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": [307, 308], "employeeid": 2, "day": ["Tuesday","Thursday"], "Type": "regular"},
+          {"duration": "1:00", "roomid": [307, 308], "employeeid": 2, "day": ["Tuesday","Thursday"], "Type": "regular"}
+        ]
+      },
+     
+      {
+        "courseid": 103,
+        "coursename": "GE Entrep - The Entrepreneurial Mind",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 3, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 3, "day": ["Tuesday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 104,
+        "coursename": "GE USelf - Understanding the Self",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 5, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 5, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 105,
+        "coursename": "GE LITE - Living in the IT Era",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 3, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 106,
+        "coursename": "GE ArtApp - Art Appreciation",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 4, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305, 306], "employeeid": 4, "day": ["Tuesday"], "Type": "regular"}
+        ]
+      },
+      {
+         "courseid": 107,
+        "coursename": "PE 1(PATHFit 1) - Movement Competency Training or MCT",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "2:00", "roomid": [999], "employeeid": 5, "day": ["Tuesday"], "Type": "regular"}
+        ]
+      },
+      {
+         "courseid": 108,
+        "coursename": "NSTP 1 - National Service Training Program 1",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "4:00", "roomid": [999], "employeeid": 5, "day": ["Saturday"], "Type": "regular"}
+        ]
+      }
+    ]
+  }
+  
+]

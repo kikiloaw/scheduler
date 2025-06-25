@@ -1,0 +1,479 @@
+[
+  {
+    "Courses": [
+      {
+        "courseid": 111,
+        "coursename": "B1 ITE 111 - Introduction to Computing",
+        "section": "1B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Monday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 111,
+        "coursename": "B2 ITE 111 - Introduction to Computing",
+        "section": "1B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Tuesday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 112,
+        "coursename": "B1 ITE 112 - Fundamentals of Programming",
+        "section": "1B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Monday", "Tuesday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 2, "day": ["Thursday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 112,
+        "coursename": "B2 ITE 112 - Fundamentals of Programming",
+        "section": "1B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Monday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 113,
+        "coursename": "IS 113 - IS/IT Service Management",
+        "section": "1B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305], "employeeid": 7, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [305], "employeeid": 7, "day": ["Friday"], "Type": "overload"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 111,
+        "coursename": "A1 ITE 111 - Introduction to Computing",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 111,
+        "coursename": "A2 ITE 111 - Introduction to Computing",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 5, "day": ["Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 112,
+        "coursename": "A1 ITE 112 - Fundamentals of Programming",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 2, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 112,
+        "coursename": "A2 ITE 112 - Fundamentals of Programming",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 2, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 113,
+        "coursename": "IS 113 - IS/IT Service Management",
+        "section": "1A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305], "employeeid": 7, "day": ["Tuesday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [305], "employeeid": 7, "day": ["Thursday"], "Type": "overload"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 311,
+        "coursename": "A1 ITE 311 - Systems Analysis & Design",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Thursday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [307], "employeeid": 1, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 311,
+        "coursename": "A2 ITE 311 - Systems Analysis & Design",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Thursday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 312,
+        "coursename": "IS 312 - Business Process Management",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 4, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [303], "employeeid": 4, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 313,
+        "coursename": "IS 313 - Quantitative Methods",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305], "employeeid": 3, "day": ["Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 314,
+        "coursename": "IS 314 - IS Innovations and New Technologies",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305], "employeeid": 4, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305], "employeeid": 4, "day": ["Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 315,
+        "coursename": "A1 IS 314 - Web Based Programming and Application",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 8, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 8, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 8, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 315,
+        "coursename": "A2 IS 314 - Web Based Programming and Application",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 8, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 8, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 316,
+        "coursename": "A1 IS 316 - IS/IT Security Management",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 10, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 10, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 10, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 316,
+        "coursename": "A2 IS 316 - IS/IT Security Management",
+        "section": "3A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 10, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 10, "day": ["Thursday"], "Type": "regular"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 411,
+        "coursename": "A1 IS 411 - CAPSTONE PROJECT 2",
+        "section": "4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [305], "employeeid": 1, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 411,
+        "coursename": "A2 IS 411 - CAPSTONE PROJECT 2",
+        "section": "4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Tuesday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 412,
+        "coursename": "IS 412 - IS Strategy, Management & Acquisition",
+        "section": "4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 5, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 413,
+        "coursename": "IS 413 - Business Intelligence",
+        "section": "4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 6, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [303], "employeeid": 6, "day": ["Thursday"], "Type": "regular"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 211,
+        "coursename": "A1 ITE 211 - Data Structures and Algorithm",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 211,
+        "coursename": "A2 ITE 211 - Data Structures and Algorithm",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 212,
+        "coursename": "IS 212 - Professional Issues in Information System",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [304], "employeeid": 4, "day": ["Monday", "Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [304], "employeeid": 4, "day": ["Friday", "Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "A1 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Tuesday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 2, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "A2 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 2, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 214,
+        "coursename": "IS 214 - Organizational & Management Concepts",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [305], "employeeid": 1, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [305], "employeeid": 1, "day": ["Monday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "A1 ITE 215 - Installation of Hardware and Software",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 3, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "A2 ITE 215 - Installation of Hardware and Software",
+        "section": "2A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 3, "day": ["Friday"], "Type": "overload"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 211,
+        "coursename": "B1 ITE 211 - Data Structures and Algorithm",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 211,
+        "coursename": "B2 ITE 211 - Data Structures and Algorithm",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Friday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 212,
+        "coursename": "IS 212 - Professional Issues in Information System",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [304], "employeeid": 4, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [304], "employeeid": 4, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "B1 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Tuesday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 2, "day": ["Thursday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 2, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "B2 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Thursday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 214,
+        "coursename": "IS 214 - Organizational & Management Concepts",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [304], "employeeid": 1, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [304], "employeeid": 1, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "B1 ITE 215 - Installation of Hardware and Software",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 3, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 3, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "B2 ITE 215 - Installation of Hardware and Software",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 3, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "C2 ITE 215 - Installation of Hardware and Software",
+        "section": "2B",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Monday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 3, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      }
+    ]
+  },
+  {
+    "Courses": [
+      {
+        "courseid": 211,
+        "coursename": "C1 ITE 211 - Data Structures and Algorithm",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Tuesday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Monday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 211,
+        "coursename": "C2 ITE 211 - Data Structures and Algorithm",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [208], "employeeid": 9, "day": ["Friday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 9, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 212,
+        "coursename": "IS 212 - Professional Issues in Information System",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 4, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 4, "day": ["Thursday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "C1 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Monday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Thursday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 5, "day": ["Tuesday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 213,
+        "coursename": "C2 IS 213 - IT Infrastructure & Network Technologies",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Tuesday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 5, "day": ["Thursday"], "Type": "overload"},
+          {"duration": "2:00", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 214,
+        "coursename": "IS 214 - Organizational & Management Concepts",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 1, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [303], "employeeid": 1, "day": ["Monday"], "Type": "regular"}
+        ]
+      },
+      {
+        "courseid": 215,
+        "coursename": "C1 ITE 215 - Installation of Hardware and Software",
+        "section": "2C",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Thursday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 3, "day": ["Friday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [304], "employeeid": 3, "day": ["Tuesday"], "Type": "overload"}
+        ]
+      }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ def export_section_csvs():
         filename = f"section_{section_name}_weekly.csv"
         
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['courseid', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
+            fieldnames = ['ClassID', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
             writer.writeheader()
@@ -32,7 +32,7 @@ def export_section_csvs():
             for course in section_data['Courses']:
                 for schedule in course['classschedule']:
                     row = {
-                        'courseid': course['courseid'],
+                        'ClassID': course['ClassID'],
                         'coursename': course['coursename'],
                         'section': course['section'],
                         'duration': schedule['duration'],
@@ -60,7 +60,7 @@ def export_room_csvs():
         filename = f"room_{room_id.replace(' ', '_')}_weekly.csv"
         
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['courseid', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
+            fieldnames = ['ClassID', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
             writer.writeheader()
@@ -70,7 +70,7 @@ def export_room_csvs():
                     for schedule in course['classschedule']:
                         if schedule['roomid'] == room_id:
                             row = {
-                                'courseid': course['courseid'],
+                                'ClassID': course['ClassID'],
                                 'coursename': course['coursename'],
                                 'section': course['section'],
                                 'duration': schedule['duration'],
@@ -98,7 +98,7 @@ def export_employee_csvs():
         filename = f"employee_{employee_id}_weekly.csv"
         
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['courseid', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
+            fieldnames = ['ClassID', 'coursename', 'section', 'duration', 'roomid', 'roomtype', 'employeeid', 'day']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
             writer.writeheader()
@@ -108,7 +108,7 @@ def export_employee_csvs():
                     for schedule in course['classschedule']:
                         if schedule['employeeid'] == employee_id:
                             row = {
-                                'courseid': course['courseid'],
+                                'ClassID': course['ClassID'],
                                 'coursename': course['coursename'],
                                 'section': course['section'],
                                 'duration': schedule['duration'],

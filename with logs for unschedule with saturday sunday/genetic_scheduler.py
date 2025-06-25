@@ -7,6 +7,7 @@ from openpyxl.utils import get_column_letter
 import os
 import json
 from openpyxl.cell.cell import MergedCell
+from collections import defaultdict
 
 # Helper: parse duration string to minutes
 def parse_duration(duration_str):
@@ -27,12 +28,10 @@ def random_assignment(class_entry):
     day = random.choice(possible_days)
     sched_type = class_entry.get('Type', 'regular').lower()
     if sched_type == 'overload':
-        # Overload: only allow start times from 17:30 (1050) to 20:30 (1230)
         evening_start = 17 * 60 + 30  # 17:30
         evening_end = 20 * 60 + 30    # 20:30
         valid_start_times = [t for t in range(evening_start, evening_end + 1, 30) if t + duration <= evening_end]
     else:
-        # Regular: normal day slots, avoid lunch break
         break_start = 12 * 60  # 12:00 PM
         break_end = 13 * 60    # 1:00 PM
         valid_start_times = []
@@ -43,7 +42,8 @@ def random_assignment(class_entry):
     if not valid_start_times:
         start_time = min(time_slots)  # fallback
     else:
-        start_time = random.choice(valid_start_times)
+        half = max(1, len(valid_start_times)//2)
+        start_time = random.choice(valid_start_times[:half])
     return {'day': day, 'start_time': start_time}
 
 def build_chromosome(class_data):
@@ -51,11 +51,9 @@ def build_chromosome(class_data):
     for course in class_data['Courses']:
         for sched in course['classschedule']:
             assignment = random_assignment(sched)
-            
             room_id_val = sched['roomid']
             possible_rooms = []
             chosen_room = None
-
             if isinstance(room_id_val, list):
                 possible_rooms = room_id_val
                 if possible_rooms:
@@ -65,7 +63,10 @@ def build_chromosome(class_data):
             else:
                 possible_rooms = [room_id_val]
                 chosen_room = room_id_val
-
+            # Store allowed_days for use in mutation and fitness
+            allowed_days = sched.get('day', days_of_week)
+            if isinstance(allowed_days, str):
+                allowed_days = [allowed_days]
             assignments.append({
                 'courseid': course['courseid'],
                 'coursename': course.get('coursename', ''),
@@ -75,7 +76,8 @@ def build_chromosome(class_data):
                 'employeeid': sched['employeeid'],
                 'duration': parse_duration(sched['duration']),
                 'assignment': assignment,
-                'Type': sched.get('Type', 'regular')
+                'Type': sched.get('Type', 'regular'),
+                'allowed_days': allowed_days
             })
     return assignments
 
@@ -85,10 +87,23 @@ def fitness(chromosome, class_data=None):
     conflicts = 0
     used_days = set()
     course_day = set()
+    used_time_slots = set()
+    am_used = 0
+    # Track assignments per section and day for hard constraint
+    section_day_slots = defaultdict(lambda: defaultdict(list))
+    for a in chromosome:
+        section_day_slots[a['section']][a['assignment']['day']].append(a['assignment']['start_time'])
     for i, a in enumerate(chromosome):
         scheduled += 1
         used_days.add((a['section'], a['assignment']['day']))
         key = (a['section'], a['courseid'], a['assignment']['day'])
+        used_time_slots.add((a['assignment']['day'], a['assignment']['start_time']))
+        # Count AM slots (before 12:00 PM)
+        if a['assignment']['start_time'] < 12*60:
+            am_used += 1
+        # Penalize if scheduled on a day not in allowed_days
+        if a['assignment']['day'] not in a.get('allowed_days', days_of_week):
+            score -= 20
         if key in course_day:
             score -= 10
         else:
@@ -110,6 +125,43 @@ def fitness(chromosome, class_data=None):
                     conflicts += 1
     score += scheduled
     score += 0.1 * len(used_days)
+    # Reward for using more unique time slots
+    score += 0.2 * len(used_time_slots)
+    # Reward for using AM slots
+    score += 0.1 * am_used
+    # Penalize gaps for each section
+    section_times = defaultdict(list)
+    for a in chromosome:
+        section_times[a['section']].append(a['assignment']['start_time'])
+    for times in section_times.values():
+        times.sort()
+        for i in range(1, len(times)):
+            gap = times[i] - (times[i-1] + 30)  # 30 is the slot size
+            if gap > 0:
+                score -= 0.05 * gap  # Penalize larger gaps more
+    # Penalize gaps at the start of the day for each section
+    for section, times in section_times.items():
+        if times:
+            earliest = min(times)
+            if earliest > min(time_slots):
+                score -= 0.2 * (earliest - min(time_slots))  # Penalize late start
+    # Penalize using more unique days per section (stronger penalty)
+    section_days = defaultdict(set)
+    for a in chromosome:
+        section_days[a['section']].add(a['assignment']['day'])
+    # Hard constraint: if a section uses more than one day and any of those days has vacant slots, apply a very large penalty
+    for section, days in section_days.items():
+        if len(days) > 1:
+            # For each used day, count number of slots used
+            for d in days:
+                slots_used = len(section_day_slots[section][d])
+                if slots_used < len(time_slots):
+                    score -= 10000  # Very large penalty for not filling a used day before using a new one
+        score -= 15 * (len(days) - 1)  # Much stronger penalty for using more days for a section
+    # Reward for using allowed days from the sample data
+    for a in chromosome:
+        if a['assignment']['day'] in a.get('allowed_days', days_of_week):
+            score += 5  # Encourage use of allowed days
     if class_data is not None:
         input_keys = set(
             (
@@ -146,15 +198,16 @@ def is_time_conflict(a, b):
 def mutate(chromosome):
     c = copy.deepcopy(chromosome)
     idx = random.randint(0, len(c) - 1)
-    
     mut_options = ['day', 'time']
     if len(c[idx].get('possible_rooms', [])) > 1:
         mut_options.append('room')
-    
     mutation_choice = random.choice(mut_options)
-
     if mutation_choice == 'day':
-        c[idx]['assignment']['day'] = random.choice(days_of_week)
+        # Only mutate to allowed days for this class
+        allowed_days = c[idx].get('allowed_days', days_of_week)
+        if isinstance(allowed_days, str):
+            allowed_days = [allowed_days]
+        c[idx]['assignment']['day'] = random.choice(allowed_days)
     elif mutation_choice == 'room':
         possible_rooms = c[idx]['possible_rooms']
         current_room = c[idx]['roomid']
@@ -176,12 +229,10 @@ def mutate(chromosome):
                 if t + duration <= break_start or t >= break_end:
                     if t + duration <= 17 * 60:
                         valid_start_times.append(t)
-        
         if valid_start_times:
             c[idx]['assignment']['start_time'] = random.choice(valid_start_times)
         else:
             c[idx]['assignment']['start_time'] = min(time_slots)
-
     return c
 
 def crossover(parent1, parent2):
@@ -355,7 +406,7 @@ def log_unscheduled_classes(class_data, schedule, log_filename='logs.txt'):
 
 # Example usage (replace with your data loading)
 if __name__ == "__main__":
-    with open('schedule.json') as f:
+    with open('bsis4th year.json') as f:
         class_data = json.load(f)
     if isinstance(class_data, list):
         # Flatten all Courses from all dicts in the list

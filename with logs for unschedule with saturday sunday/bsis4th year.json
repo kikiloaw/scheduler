@@ -1,0 +1,46 @@
+[
+  
+  {
+    "Courses": [
+      {
+        "courseid": 411,
+        "coursename": "A1 IS 411 - CAPSTONE PROJECT 2",
+        "section": "BSIS-4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday","Thursday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday","Thursday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [305], "employeeid": 1, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+	    {
+        "courseid": 411,
+        "coursename": "A2 IS 411 - CAPSTONE PROJECT 2",
+        "section": "BSIS-4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday","Tuesday"], "Type": "overload"},
+          {"duration": "1:30", "roomid": [310], "employeeid": 1, "day": ["Monday","Tuesday"], "Type": "regular"},
+          {"duration": "2:00", "roomid": [305], "employeeid": 1, "day": ["Friday"], "Type": "overload"}
+        ]
+      },
+      {
+        "courseid": 412,
+        "coursename": "IS 412 - IS Strategy, Management & Acquisition",
+        "section": "BSIS-4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 5, "day": ["Monday"], "Type": "overload"},
+		      {"duration": "1:30", "roomid": [303], "employeeid": 5, "day": ["Friday"], "Type": "overload"}
+		    ]
+      },
+      {
+        "courseid": 413,
+        "coursename": "IS 413 - Business Intelligence",
+        "section": "BSIS-4A",
+        "classschedule": [
+          {"duration": "1:30", "roomid": [303], "employeeid": 6, "day": ["Monday"], "Type": "regular"},
+          {"duration": "1:30", "roomid": [303], "employeeid": 6, "day": ["Thursday"], "Type": "regular"}
+        ]
+      }
+    ]
+  }
+  
+]

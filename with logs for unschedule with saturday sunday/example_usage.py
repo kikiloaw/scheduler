@@ -19,7 +19,7 @@ def example_1_basic_scheduling():
         {
             'Courses': [
                 {
-                    'courseid': 1,
+                    'ClassID': 1,
                     'section': '2A',
                     'classschedule': [ 
                         {'duration': '3:30', 'roomtype': 1, 'employeeid': 120},
@@ -28,7 +28,7 @@ def example_1_basic_scheduling():
                     ]
                 },
                 {
-                    'courseid': 2,
+                    'ClassID': 2,
                     'section': '2A',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 120},
@@ -40,7 +40,7 @@ def example_1_basic_scheduling():
         {
             'Courses': [
                 {
-                    'courseid': 3,
+                    'ClassID': 3,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 120},
@@ -48,7 +48,7 @@ def example_1_basic_scheduling():
                     ]
                 },
                 {
-                    'courseid': 4,
+                    'ClassID': 4,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 120},
@@ -75,7 +75,7 @@ def example_2_multiple_employees():
         {
             'Courses': [
                 {
-                    'courseid': 1,
+                    'ClassID': 1,
                     'section': '2A',
                     'classschedule': [ 
                         {'duration': '2:00', 'roomtype': 1, 'employeeid': 101},
@@ -83,7 +83,7 @@ def example_2_multiple_employees():
                     ]
                 },
                 {
-                    'courseid': 2,
+                    'ClassID': 2,
                     'section': '2A',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 103},
@@ -95,7 +95,7 @@ def example_2_multiple_employees():
         {
             'Courses': [
                 {
-                    'courseid': 3,
+                    'ClassID': 3,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:30', 'roomtype': 1, 'employeeid': 102},
@@ -103,7 +103,7 @@ def example_2_multiple_employees():
                     ]
                 },
                 {
-                    'courseid': 4,
+                    'ClassID': 4,
                     'section': '2B',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 101},
@@ -138,7 +138,7 @@ def example_3_conflict_scenario():
         {
             'Courses': [
                 {
-                    'courseid': 1,
+                    'ClassID': 1,
                     'section': '2A',
                     'classschedule': [ 
                         {'duration': '4:00', 'roomtype': 1, 'employeeid': 101},  # Very long class
@@ -146,7 +146,7 @@ def example_3_conflict_scenario():
                     ]
                 },
                 {
-                    'courseid': 2,
+                    'ClassID': 2,
                     'section': '2A',
                     'classschedule': [
                         {'duration': '2:00', 'roomtype': 1, 'employeeid': 101},  # Same employee, same room
@@ -174,7 +174,7 @@ def example_4_custom_data():
         {
             'Courses': [
                 {
-                    'courseid': 101,
+                    'ClassID': 101,
                     'section': 'CS101',
                     'classschedule': [ 
                         {'duration': '1:30', 'roomtype': 1, 'employeeid': 201},  # Lab
@@ -182,7 +182,7 @@ def example_4_custom_data():
                     ]
                 },
                 {
-                    'courseid': 102,
+                    'ClassID': 102,
                     'section': 'CS101',
                     'classschedule': [
                         {'duration': '1:00', 'roomtype': 1, 'employeeid': 202},  # Lab
@@ -194,7 +194,7 @@ def example_4_custom_data():
         {
             'Courses': [
                 {
-                    'courseid': 201,
+                    'ClassID': 201,
                     'section': 'MATH101',
                     'classschedule': [
                         {'duration': '2:00', 'roomtype': 2, 'employeeid': 203},  # Lecture only
